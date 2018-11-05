@@ -84,6 +84,12 @@ h6 {
         background-color: $orange-base;
     }
 
+    &.ghost {
+        background-color: $white-base;
+        color: $black-lighter;
+        border: 1px solid $gray-alto;
+    }
+
     &.large {
         height: 48px;
         line-height: 48px;
@@ -99,6 +105,15 @@ h6 {
         height: 32px;
         line-height: 32px;
     }
+
+    &.block {
+        display: block;
+        width: 100%;
+    }
+}
+
+.ft-link {
+    color: $green-apple;
 }
 
 /* Header */
@@ -142,12 +157,11 @@ h6 {
 .ft-table {
     &__summary {
         p {
-            margin: 0;
+            margin: 0 0 16px;
             font-size: 20px;
         }
 
         &-content {
-            margin: 16px 0;
 
             tr>td {
                 padding: 8px 0;
