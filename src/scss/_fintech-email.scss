@@ -182,6 +182,19 @@ h6 {
                 border-bottom: none;
             }
         }
+
+        .column__payment {
+            img {
+                display: inline-block;
+                margin-right: 4px;
+                vertical-align: middle;
+            }
+
+            span {
+                font-size: $font-size-caption;
+                color: $black-lighter;
+            }
+        }
     }
 }
 
