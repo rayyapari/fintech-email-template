@@ -10,7 +10,6 @@ body {
     font-size: $font-size-body;
     font-weight: 400;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 
 strong,
@@ -126,6 +125,29 @@ h6 {
     color: $green-apple;
 }
 
+.ft-giftcard {
+    &__intro {
+        font-size: $font-size-caption;
+    }
+
+    &__box {
+        padding: 16px;
+        border: 1px solid $gray-alto;
+        border-radius: 4px;
+
+        span {
+            font-size: $font-size-caption;
+        }
+
+        p {
+            margin: 8px 0;
+            color: $green-base;
+            font-size: $font-size-title;
+            font-weight: bold;
+        }
+    }
+}
+
 /* Header */
 .ft-product__logo {
     height: 35px;
@@ -161,6 +183,63 @@ h6 {
         margin: 40px auto 24px;
         background-color: $white-base;
         border: 1px solid $gray-alto;
+    }
+}
+
+.ft-card {
+    p {
+        margin: 0 0 16px;
+        font-size: 20px;
+    }
+
+    &__content {
+        border: 1px solid $gray-alto;
+        border-radius: 4px;
+
+        .card-content__header {
+            padding: 8px;
+
+            p {
+                margin: 8px 0;
+                font-size: $font-size-body;
+                font-weight: bold;
+            }
+        }
+
+        .card-content__body {
+            padding: 16px 8px;
+            border-top: 1px solid $gray-alto;
+            border-bottom: 1px solid $gray-alto;
+
+            p {
+                margin: 0;
+
+                &:nth-child(odd) {
+                    display: block;
+                    font-size: $font-size-caption;
+                    color: $black-lighter;
+                }
+
+                &:nth-child(even) {
+                    margin-bottom: 16px;
+                    font-size: $font-size-body;
+                    font-weight: bold;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .card-content__footer {
+            padding: 8px;
+
+            a {
+                font-size: $font-size-caption;
+                color: $green-apple;
+            }
+        }
     }
 }
 

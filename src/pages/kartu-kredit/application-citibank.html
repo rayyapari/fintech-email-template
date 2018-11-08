@@ -1,0 +1,81 @@
+---
+title: Tokopedia Kartu Kredit - Citibank
+userName: Ray Yapari
+iconUrl: "https://ecs7.tokopedia.net/img/wallet/email/mf-icon-application-approved_tokopedia.png"
+iconAlt: "Icon Pengajuan Disetujui"
+iconDesc: Selamat! Anda telah berhasil mengajukan aplikasi kartu kredit di Tokopedia!
+---
+
+<table border="0" cellpadding="0" cellspacing="0" class="ft-body__container" align="center">
+    <!-- Header -->
+    {{> header type="kartu-kredit"}}
+    <!-- end of Header -->
+
+    <!-- Body -->
+    {{> intro}}
+
+    <tr>
+        <td class="padding-y16 padding-x24">
+            Terima kasih telah mengajukan aplikasi kartu kredit di Tokopedia Credit Card pada tanggal: 10 Januari 2018.
+            <br />
+            Data yang telah Anda isi telah masuk ke dalam sistem kami. Berikut adalah detail aplikasi kartu Anda.
+        </td>
+    </tr>
+
+    <!-- Table -->
+    <tr>
+        <td class="padding-xy24 ft-table__summary">
+            <p><b>Ringkasan Pengajuan Kartu Kredit</b></p>
+            <table cellpadding="0" cellspacing="0" width="100%" class="ft-table__summary-content">
+                <tr>
+                    <td width="40%" align="left">Nama Pemohon</td>
+                    <td width="60%" align="right"><b>{{userName}}</b></td>
+                </tr>
+                <tr>
+                    <td width="40%" align="left">Email</td>
+                    <td width="60%" align="right"><b>ray.yapari@tokopedia.com</b></td>
+                </tr>
+                <tr>
+                    <td width="40%" align="left">Citibank Prospect ID</td>
+                    <td width="60%" align="right"><b>123456789</b></td>
+                </tr>
+                <tr>
+                    <td width="40%" align="left">Nomor Ponsel</td>
+                    <td width="60%" align="right"><b>081234567890</b></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <!-- end of Table -->
+
+    <tr>
+        <td class="padding-y16 padding-x24">
+            Anda mendapatkan Giftcard karena sudah mengajukan aplikasi Kartu Kredit <b>Citibank</b> melalui Tokopedia.
+        </td>
+    </tr>
+
+    {{> gift-card}}
+
+    <tr>
+        <td class="padding-y16 padding-x24">
+            Yuk segera redeem kode Gift Card untuk mendapatkan tambahan TokoCash.
+            <br />
+            Tambahan TokoCash tersebut bisa kamu gunakan untuk belanja, isi pulsa, bayar tagihan, hinggabeli tiket
+            kereta di Tokopedia.
+        </td>
+    </tr>
+
+    <tr>
+        <td class="padding-y16 padding-x24" align="center">
+            <a class="ft-btn green large" href="#">
+                Redeem Sekarang
+            </a>
+        </td>
+    </tr>
+
+    <!-- end of Body -->
+
+    <!-- Footer -->
+    {{> footer}}
+    <!-- end of Footer -->
+</table>

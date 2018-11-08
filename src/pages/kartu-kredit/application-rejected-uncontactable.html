@@ -1,0 +1,61 @@
+---
+title: Tokopedia Kartu Kredit - Pengajuan Belum Berhasil
+userName: Ray Yapari
+iconUrl: "https://ecs7.tokopedia.net/img/wallet/email/icon-credit-card-failed_tokopedia.png"
+iconAlt: "Icon Pengajuan Belum Berhasil"
+iconDesc: Pengajuan Kartu Kredit Anda Belum Berhasil
+---
+
+<table border="0" cellpadding="0" cellspacing="0" class="ft-body__container" align="center">
+    <!-- Header -->
+    {{> header type="kartu-kredit"}}
+    <!-- end of Header -->
+
+    <!-- Body -->
+    {{> intro}}
+
+    <tr>
+        <td class="padding-y16 padding-x24">
+            Maaf, aplikasi Kartu Kredit Anda belum berhasil.
+            <br />
+            <br />
+            Mitra <b>MEGA</b> telah mencoba menghubungi Anda, tetapi tidak dapat tersambung.
+            Pastikan nomor handphone Anda aktif dan mudah untuk dihubungi sewaktu-waktu.
+            <br />
+            <br />
+            Terima Kasih.
+
+        </td>
+    </tr>
+
+    <!-- Table -->
+    <tr>
+        <td class="padding-xy24 ft-table__summary">
+            <p><b>Ringkasan Pengajuan Kartu Kredit</b></p>
+            <table cellpadding="0" cellspacing="0" width="100%" class="ft-table__summary-content">
+                <tr>
+                    <td width="40%" align="left">Nama Pemohon</td>
+                    <td width="60%" align="right"><b>{{userName}}</b></td>
+                </tr>
+                <tr>
+                    <td width="40%" align="left">Jenis Kartu</td>
+                    <td width="60%" align="right"><b>Kartu XYZ</b></td>
+                </tr>
+                <tr>
+                    <td width="40%" align="left">Mitra Penyedia</td>
+                    <td width="60%" align="right"><b>CIMB Niaga</b></td>
+                </tr>
+                <tr>
+                    <td width="40%" align="left">Application ID</td>
+                    <td width="60%" align="right"><b>1234567890</b></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <!-- end of Table -->
+    <!-- end of Body -->
+
+    <!-- Footer -->
+    {{> footer}}
+    <!-- end of Footer -->
+</table>
