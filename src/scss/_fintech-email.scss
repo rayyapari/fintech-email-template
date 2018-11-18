@@ -166,6 +166,7 @@ h6 {
         padding: 24px;
         border: 1px solid $gray-alto;
         border-radius: 8px;
+        background-color: $white-base;
         text-align: center;
 
         p {
@@ -275,6 +276,12 @@ h6 {
             }
         }
     }
+}
+
+.ft-contact {
+    margin: 0;
+    font-size: $font-size-caption;
+    color: $black-light;
 }
 
 /* Footer */
