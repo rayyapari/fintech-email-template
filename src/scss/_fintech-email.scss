@@ -23,6 +23,11 @@ a {
 
 table {
     border-spacing: 0;
+
+    &.full {
+        width: 100%;
+        min-width: 100%;
+    }
 }
 
 h1,
@@ -111,6 +116,35 @@ h6 {
     }
 }
 
+.ft-info__container {
+    width: 100%;
+    min-width: 100%;
+    padding: 16px;
+    background-color: $gray-alabaster;
+    border-radius: 4px;
+
+    td {
+        vertical-align: top;
+    }
+
+    .ft-info__icon {
+        height: 56px;
+        width: 56px;
+    }
+
+    .ft-info__title {
+        margin: 0;
+        padding-left: 16px;
+        font-size: $font-size-subheader;
+    }
+
+    .ft-info__list {
+        margin: 8px 0 0;
+        font-size: $font-size-caption;
+        color: $black-lighter;
+    }
+}
+
 .ft-ticker {
     padding: 8px 16px;
     margin: 0;
@@ -144,6 +178,94 @@ h6 {
             color: $green-base;
             font-size: $font-size-title;
             font-weight: bold;
+        }
+    }
+}
+
+.ft-giftcard__container {
+    padding: 56px 24px 64px;
+    background-image: url("https://ecs7.tokopedia.net/assets-fintech-email/img/gift-card/background-illustration.png");
+    background-size: 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    .ft-giftcard__content {
+        &__top {
+            margin: auto;
+            padding: 16px;
+            width: 435px !important;
+            color: $white-base;
+            border-radius: 8px 8px 0 0;
+
+            background-image: url("https://ecs7.tokopedia.net/assets-fintech-email/img/gift-card/card-design-toped.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            .giftcard__amount {
+                margin: 0;
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            .giftcard__validity {
+                margin: 175px 0 0;
+                font-size: 14px;
+            }
+        }
+
+        &__bottom {
+            margin: auto;
+            padding: 16px;
+            width: 435px !important;
+            background-color: $white-base;
+            border-radius: 0 0 8px 8px;
+
+            .giftcard__receiver {
+                margin: 0;
+                font-size: 24px;
+            }
+
+            .giftcard__message {
+                margin: 8px 0;
+                padding-bottom: 24px;
+                border-bottom: 1px solid $gray-alto;
+                font-size: 14px;
+                color: $black-lighter;
+            }
+
+            .giftcard__sender {
+                margin: 8px 0 0;
+                font-size: 12px;
+                color: $black-base;
+
+                span {
+                    padding-right: 8px;
+                    color: $black-lighter;
+                    font-style: italic;
+                }
+            }
+        }
+
+        &__code {
+            margin: 24px auto 0;
+            width: 435px !important;
+            background-color: $white-base;
+            border-radius: 8px;
+
+            .giftcard__label {
+                margin: 0;
+                font-size: 14px;
+            }
+
+            .giftcard__code {
+                margin: 8px 0 0;
+                font-size: $font-size-title;
+            }
+
+            .giftcard__button {
+                border-left: 1px dashed $gray-alto;
+            }
         }
     }
 }
@@ -252,6 +374,8 @@ h6 {
         }
 
         &-content {
+            width: 100%;
+            min-width: 100%;
 
             tr>td {
                 padding: 8px 0;
@@ -277,6 +401,34 @@ h6 {
         }
     }
 }
+
+/* Gift Card Style */
+.ft-giftcard__intro {
+    &__title {
+        margin: 0 0 24px;
+        font-size: 20px;
+    }
+
+    &__desc {
+        margin: 0;
+        color: $black-light;
+    }
+}
+
+.ft-giftcard__redeem {
+    &__title {
+        margin: 0 0 16px;
+        font-size: 20px;
+    }
+
+    &__desc {
+        margin: 16px 0 0;
+        font-size: $font-size-caption;
+        color: $black-lighter;
+    }
+}
+
+/* end of Gift Card Style */
 
 .ft-contact {
     margin: 0;
@@ -349,6 +501,7 @@ h6 {
         color: $black-lighter;
         border-top: 1px solid $gray-alto;
         background-color: $gray-alabaster;
+        text-align: center;
 
         a {
             color: $green-apple;
