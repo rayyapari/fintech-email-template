@@ -1,0 +1,62 @@
+@import './color';
+
+/* Helper */
+.padding {
+  &-xy16 {
+    padding: 16px;
+  }
+
+  &-x16 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  &-t16 {
+    padding-top: 16px;
+  }
+
+  &-b16 {
+    padding-bottom: 16px;
+  }
+
+  &-y8 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  &-y16 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  &-xy24 {
+    padding: 24px;
+  }
+
+  &-x24 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  &-y24 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+.borderless {
+  border: none !important;
+}
+.bordered {
+  border-radius: 4px;
+  border: 1px solid $gray-alto;
+}
+.w {
+  &-auto {
+    width: auto;
+    min-width: auto;
+  }
+  &-50 {
+    width: 50%;
+  }
+}
