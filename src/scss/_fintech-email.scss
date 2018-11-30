@@ -179,84 +179,88 @@ ol {
   background-size: 100%;
   background-position: top center;
   background-repeat: no-repeat;
+}
 
-  .ft-giftcard__content {
-    &__top {
-      margin: auto;
-      padding: 16px;
-      width: 435px !important;
-      color: $white-base;
-      border-radius: 8px 8px 0 0;
+.ft-giftcard__content {
+  &__top {
+    margin: auto;
+    padding: 16px;
+    width: 435px !important;
+    color: $white-base;
+    border-radius: 8px 8px 0 0;
 
-      background-image: url('https://ecs7.tokopedia.net/assets-fintech-email/img/gift-card/card-design-toped.png');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
+    background-image: url('https://ecs7.tokopedia.net/assets-fintech-email/img/gift-card/card-design-toped.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-      .giftcard__amount {
-        margin: 0;
-        font-size: 24px;
-        font-weight: bold;
-      }
-
-      .giftcard__validity {
-        margin: 175px 0 0;
-        font-size: 14px;
-      }
+    .giftcard__amount {
+      margin: 0;
+      font-size: 24px;
+      font-weight: bold;
     }
 
-    &__bottom {
-      margin: auto;
-      padding: 16px;
-      width: 435px !important;
-      background-color: $white-base;
-      border-radius: 0 0 8px 8px;
+    .giftcard__validity {
+      margin: 175px 0 0;
+      font-size: 14px;
+    }
+  }
 
-      .giftcard__receiver {
-        margin: 0;
-        font-size: 24px;
-      }
+  &__bottom {
+    margin: auto;
+    padding: 16px;
+    width: 435px !important;
+    background-color: $white-base;
+    border-radius: 0 0 8px 8px;
 
-      .giftcard__message {
-        margin: 8px 0;
-        padding-bottom: 24px;
-        border-bottom: 1px solid $gray-alto;
-        font-size: 14px;
+    &--payment {
+      border: 1px solid $gray-alto;
+    }
+
+    .giftcard__receiver {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .giftcard__message {
+      margin: 8px 0;
+      padding-bottom: 24px;
+      border-bottom: 1px solid $gray-alto;
+      font-size: 14px;
+      color: $black-lighter;
+    }
+
+    .giftcard__sender {
+      margin: 8px 0 0;
+      font-size: 12px;
+      color: $black-base;
+
+      span {
+        padding-right: 8px;
         color: $black-lighter;
-      }
-
-      .giftcard__sender {
-        margin: 8px 0 0;
-        font-size: 12px;
-        color: $black-base;
-
-        span {
-          padding-right: 8px;
-          color: $black-lighter;
-          font-style: italic;
-        }
+        font-style: italic;
       }
     }
+  }
 
-    &__code {
-      margin: 24px auto 0;
-      width: 435px !important;
-      background-color: $white-base;
-      border-radius: 8px;
+  &__code {
+    margin: 24px auto 0;
+    width: 435px !important;
+    background-color: $white-base;
+    border-radius: 8px;
 
-      .giftcard__label {
-        margin: 0;
-        font-size: 14px;
-      }
+    .giftcard__label {
+      margin: 0;
+      font-size: 14px;
+    }
 
-      .giftcard__code {
-        margin: 8px 0 0;
-        font-size: $font-size-title;
-      }
+    .giftcard__code {
+      margin: 8px 0 0;
+      font-size: $font-size-title;
+    }
 
-      .giftcard__button {
-        border-left: 1px dashed $gray-alto;
-      }
+    .giftcard__button {
+      border-left: 1px dashed $gray-alto;
     }
   }
 }
