@@ -110,16 +110,19 @@ ol {
   .ft-info__list {
     margin: 8px 0 0;
     font-size: $font-size-caption;
+
     // color: $black-lighter;
     li {
       margin-bottom: 8px;
     }
   }
 }
+
 .ft-info__icon {
   height: 56px;
   width: 56px;
 }
+
 .icon-info {
   background-image: url('https://ecs7.tokopedia.net/assets-fintech-email/img/asuransi/icon-info.png');
   background-repeat: no-repeat;
@@ -130,6 +133,7 @@ ol {
   margin-top: -4px;
   margin-right: 8px;
 }
+
 .ft-info__title {
   margin: 0;
   padding-left: 16px;
@@ -372,7 +376,8 @@ ol {
       width: 100%;
       min-width: 100%;
 
-      tr > {
+      tr> {
+
         td,
         th {
           padding: 8px 0;
@@ -380,7 +385,11 @@ ol {
         }
       }
 
-      tr:last-child > td {
+      tr:first-child>td {
+        border-bottom: 1px solid $gray-alto !important;
+      }
+
+      tr:last-child>td {
         border-bottom: none;
       }
     }
