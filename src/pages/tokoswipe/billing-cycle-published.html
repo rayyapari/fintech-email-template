@@ -1,0 +1,78 @@
+---
+title: TokoSwipe Billing Cycle Published
+userName: Ray Yapari
+iconUrl: "https://ecs7.tokopedia.net/img/wallet/email/tokocard/tokocard-billing-cycle-publish.png"
+iconAlt: "Icon Detail Tagihan Telah Terbit"
+iconDesc: Detail Tagihan TokoSwipe Telah Terbit
+---
+
+<table border="0" cellpadding="0" cellspacing="0" class="ft-body__container" align="center">
+  <!-- Header -->
+  {{> header type="tokoswipe"}}
+  <!-- end of Header -->
+
+  <!-- Body -->
+  {{> intro}}
+
+  <tr>
+    <td class="padding-y16 padding-x24">
+      Terima kasih telah melakukan transaksi dengan TokoSwipe. Detail tagihan TokoSwipe Anda telah terbit. Lakukan
+      pembayaran sebelum jatuh tempo tiba.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="padding-xy24" align="center">
+      <a class="ft-btn green large" href="#">
+        Bayar Sekarang
+      </a>
+    </td>
+  </tr>
+
+  <!-- Table -->
+  <tr>
+    <td class="padding-y16 padding-x24 ft-table__summary">
+      <p><b>Ringkasan Tagihan TokoSwipe</b></p>
+      <table cellpadding="0" cellspacing="0" width="100%" class="ft-table__summary-content">
+        <tr>
+          <td width="40%" align="left">Nama Pemilik</td>
+          <td width="60%" align="right"><b>{{userName}}</b></td>
+        </tr>
+        <tr>
+          <td width="40%" align="left">Partner Penyedia</td>
+          <td width="60%" align="right"><b>Modalku</b></td>
+        </tr>
+        <tr>
+          <td width="40%" align="left">Periode Tagihan</td>
+          <td width="60%" align="right"><b>15 Juli 2018 - 15 Agustus 2018</b></td>
+        </tr>
+        <tr>
+          <td width="40%" align="left">Jatuh Tempo Tagihan</td>
+          <td width="60%" align="right"><b>30 Agustus 2018</b></td>
+        </tr>
+        <tr>
+          <td width="40%" align="left">Total Jumlah Tagihan</td>
+          <td width="60%" align="right"><b>Rp4.200.000</b></td>
+        </tr>
+        <tr>
+          <td width="40%" align="left">Minimum Pembayaran</td>
+          <td width="60%" align="right"><b>Rp500.000</b></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <!-- end of Table -->
+
+  <tr>
+    <td class="padding-y16 padding-x24">
+      Berikut terlampir detail tagihan Anda untuk periode <strong>15 Juli 2018 - 15 Agustus 2018</strong>, <a class="ft-link"
+        href="#">klik disini</a>.
+    </td>
+  </tr>
+
+  <!-- end of Body -->
+
+  <!-- Footer -->
+  {{> footer}}
+  <!-- end of Footer -->
+</table>
