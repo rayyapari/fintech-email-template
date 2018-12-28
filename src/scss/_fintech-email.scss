@@ -456,15 +456,31 @@ ol {
   &__product {
     display: block;
     padding: 16px;
+    color: $black-light;
     border: 1px solid $gray-alto;
     border-radius: 4px;
     text-align: center;
     box-sizing: border-box;
 
-    p {
-      margin: 16px 0 0;
+    .title {
       font-size: $font-size-caption;
       color: $black-light;
+      text-align: center;
+
+      &--primary {
+        margin: 16px 0 0;
+      }
+
+      &--secondary {
+        margin: 0;
+        font-weight: bold;
+      }
+    }
+
+    .desc {
+      margin: 8px 0 0;
+      font-size: 11px;
+      color: $black-lighter;
       text-align: center;
     }
   }
