@@ -44,7 +44,9 @@ gulp.task("htmlMin", function() {
         removeComments: true
       })
     )
-    .pipe(inlineCss())
+    .pipe(inlineCss({
+      removeHtmlSelectors: true
+    }))
     .pipe(gulp.dest("dist/"));
 });
 
