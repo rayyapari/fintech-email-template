@@ -46,19 +46,23 @@
 
 .borderless {
   border: none !important;
+
   td {
     border: none !important;
   }
 }
+
 .bordered {
   border-radius: 4px;
   border: 1px solid $gray-alto;
 }
+
 .w {
   &-auto {
     width: auto;
     min-width: auto;
   }
+
   &-50 {
     width: 50%;
   }
