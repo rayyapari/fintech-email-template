@@ -446,6 +446,19 @@ ol {
   display: block;
 }
 
+.ft-partner {
+  &__caption {
+    font-size: 11px;
+    color: $black-lighter;
+  }
+
+  &__logo {
+    height: 16px;
+    width: auto;
+    vertical-align: middle;
+  }
+}
+
 /* Gift Card Style */
 .ft-giftcard__intro {
   &__title {
