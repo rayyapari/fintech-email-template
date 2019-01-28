@@ -1,0 +1,195 @@
+@import './color';
+@import './typography';
+
+page {
+  background: white;
+  display: block;
+  margin: 0.5cm auto;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+page[size="A4"] {
+  width: 21cm;
+  height: 29.7cm;
+}
+page[size="A4"][layout="landscape"] {
+  width: 29.7cm;
+  height: 21cm;
+}
+@media print {
+  body, page {
+    margin: 0;
+    box-shadow: 0;
+  }
+}
+
+.ft-pdf-gc {
+  &__container {
+    width: 100%;
+    height: 100%;
+    font-family: 'GothamPro';
+
+    .label {
+      &--small {
+        font-size: 9px;
+        color: $black-light;
+        margin: 2px 0;
+      }
+
+      &--medium {
+        font-size: 10px;
+        color: $black-light;
+        margin-bottom: 16px;
+      }
+
+      &--large {
+        font-size: 14px;
+        color: $black-light;
+        margin-bottom: 16px;
+      }
+
+      &--amount {
+        font-size: 18px;
+        font-weight: bold;
+        color: $black-base;
+        margin: 16px;
+      }
+
+      &--code {
+        font-size: 18px;
+        font-weight: bold;
+        color: $black-base;
+        margin: 0;
+      }
+
+      &--info {
+        font-size: 10px;
+        color: $black-lighter;
+      }
+    }
+
+    .line-spacer {
+      border: 1px solid $gray-alto;
+      margin: 8px 0;
+
+      &--partial {
+        width: 50px;
+        margin: 4px auto;
+      }
+    }
+  }
+  &__section {
+    width: 50%;
+    height: 50%;
+
+    &--left {
+      -ms-transform: rotate(90deg); /* IE 9 */
+      -webkit-transform: rotate(90deg); /* Safari 3-8 */
+      transform: rotate(90deg);
+    }
+
+    &--right {
+      -ms-transform: rotate(-90deg); /* IE 9 */
+      -webkit-transform: rotate(-90deg); /* Safari 3-8 */
+      transform: rotate(-90deg);
+    }
+
+    &.center {
+      text-align: center;
+    }
+  }
+  &__seperator {
+    margin-bottom: 16px;
+  }
+  &__code {
+    background-image: url("https://ecs7.tokopedia.net/assets-giftcard-frontend/production/img/pdf/gc-code-container.png");
+    background-size: 285px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 285px;
+    height: 94px;
+    margin: 16px auto;
+
+    .content {
+      padding: 12px 32px;
+      text-align: left;
+    }
+  }
+  &__message {
+    position: relative;
+    &--background {
+      width: 100%;
+      height: 100%;
+      background-image: url("https://ecs7.tokopedia.net/assets-giftcard-frontend/production/img/pdf/msg-box.png");
+      background-position: center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+
+    &--to {
+      position: absolute;
+      left: 45px;
+      top: 155px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    &--from {
+      position: absolute;
+      left: 340px;
+      bottom: 152px;
+      font-size: 14px;
+      font-weight: bold;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: 70px;
+    }
+  }
+  &__how {
+    font-size: 9px;
+    .list-how {
+      list-style: none;
+      margin-left: 38px;
+      padding: 0;
+
+      &--list {
+        counter-increment: item;
+        margin-bottom: 10px;
+        &:before {
+          content: counter(item);
+          padding: 2px;
+          border-radius: 100%;
+          color: $white-base;
+          width: 20px;
+          height: 20px;
+          line-height: 1.7;
+          background-color: rgba(0, 0, 0, 0.7);
+          text-align: center;
+          display: inline-block;
+          margin: 0 8px 0 -38px;
+        }
+      }
+    }
+
+    .list-unordered {
+      li {
+        margin: 12px 0;
+        margin-left: -25px;
+      }
+    }
+  }
+  &__box {
+    margin-top: 16px;
+    border: 1px solid $gray-alto;
+    border-radius: 12px;
+    color: $black-lighter;
+    font-size: 9px;
+
+    .list-unordered {
+      li {
+        margin: 12px 0;
+        margin-left: -8px;
+      }
+    }
+  }
+}
