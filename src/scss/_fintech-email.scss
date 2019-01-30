@@ -469,6 +469,79 @@ ol {
       }
     }
   }
+
+  &__gc-multiple {
+    .title {
+      margin: 0 0 16px;
+      font-size: 20px;
+    }
+
+    &-content {
+      width: 100%;
+      min-width: 100%;
+      padding: 16px;
+      border: 1px solid $gray-alto;
+      border-radius: 8px;
+
+      .contact {
+        font-size: 10px;
+        color: $black-lighter;
+        margin: 0;
+      }
+
+      tr> {
+
+        td,
+        th {
+          padding: 8px 0;
+          border-bottom: 1px solid $gray-alto;
+        }
+      }
+
+      tr:first-child>td {
+        border-bottom: 1px solid $gray-alto !important;
+      }
+
+      tr:last-child>td {
+        border-bottom: none;
+      }
+    }
+
+    &-box {
+      border-radius: 8px;
+      background-color: #fbfbfb;
+      padding: 16px;
+
+      .list-step {
+        list-style: none;
+        padding: 0;
+        li {
+          counter-increment: item;
+          margin-bottom: 16px;
+
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+
+          &:before {
+            padding: 2px;
+            content: "0" counter(item) ".";
+            border-radius: 100%;
+            font-weight: bold;
+            text-align: center;
+            display: inline-block;
+            margin-right: 8px;
+          }
+        }
+
+        .step {
+          font-size: 10px;
+          color: $black-lighter;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
 }
 
 .ft-banner__container {
