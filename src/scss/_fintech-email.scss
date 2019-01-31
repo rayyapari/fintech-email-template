@@ -511,35 +511,6 @@ ol {
       border-radius: 8px;
       background-color: #fbfbfb;
       padding: 16px;
-
-      .list-step {
-        list-style: none;
-        padding: 0;
-        li {
-          counter-increment: item;
-          margin-bottom: 16px;
-
-          &:last-of-type {
-            margin-bottom: 0;
-          }
-
-          &:before {
-            padding: 2px;
-            content: "0" counter(item) ".";
-            border-radius: 100%;
-            font-weight: bold;
-            text-align: center;
-            display: inline-block;
-            margin-right: 8px;
-          }
-        }
-
-        .step {
-          font-size: 10px;
-          color: $black-lighter;
-          margin-bottom: 0;
-        }
-      }
     }
   }
 }
