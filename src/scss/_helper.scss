@@ -1,4 +1,4 @@
-@import './color';
+@import "./color";
 
 /* Helper */
 .padding {
@@ -17,6 +17,10 @@
 
   &-t24 {
     padding-top: 24px;
+  }
+
+  &-b8 {
+    padding-bottom: 8px;
   }
 
   &-b16 {
@@ -69,5 +73,14 @@
 
   &-50 {
     width: 50%;
+  }
+}
+
+.valign {
+  &-top {
+    vertical-align: top;
+  }
+  &-bottom {
+    vertical-align: bottom;
   }
 }
