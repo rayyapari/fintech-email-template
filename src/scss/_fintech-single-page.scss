@@ -1,0 +1,120 @@
+@import './color';
+@import './typography';
+
+.ft-giftcard-sms {
+  &__container {
+    background-color: $white-base;
+
+    @media (min-width: 500px) {
+      width: 500px;
+      margin: 40px auto 24px;
+      border: 1px solid $gray-alto;
+    }
+  }
+
+  &__info {
+    border-radius: 8px;
+    margin: 16px;
+    padding: 8px;
+
+    &--green {
+      font-size: 10px;
+      border: 1px solid #82ef95;
+      background-color: #ebffef;
+      color: rgba(49, 53, 59, 0.44);
+    }
+
+    &--default {
+      font-size: 11px;
+      border-radius: 8px;
+      background-color: #f8f8f8;
+      color: $black-lighter;
+    }
+  }
+
+  .ft-giftcard__content__top {
+    width: 287px !important;
+
+    .giftcard {
+      &__amount {
+        font-size: 18px;
+      }
+      &__validity {
+        margin-top: 100px;
+        font-size: 10px;
+      }
+    }
+  }
+
+  .ft-giftcard__content__bottom {
+    width: 287px !important;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+
+    .giftcard {
+      &__receiver {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__list {
+    &--unordered {
+      margin-left: -20px;
+      li {
+        margin-bottom: 8px
+      }
+    }
+  }
+
+  &__how {
+    margin: 16px;
+    @media (max-width: 500px) {
+      margin-bottom: 88px;
+    }
+
+    .title {
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.88;
+      color: $black-base;
+    }
+
+    .step {
+      &__icon {
+        width: auto;
+        height: 100px;
+        margin-right: 16px;
+      }
+      &__list {
+        display: flex;
+        margin-bottom: 16px;
+        align-items: center;
+        font-size: 12px;
+        color: $black-lighter;
+      }
+    }
+  }
+
+  &__cta {
+    .redeem-btn {
+      width: 90%;
+      display: block;
+
+      @media (min-width: 500px) {
+        width: 80%;
+        margin: 16px auto;
+      }
+    }
+
+    @media (max-width: 500px) {
+      position: fixed;
+      bottom: 0px;
+      left: 0px;
+      width: 100%;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px -1px 7px 0px;
+      background-color: rgba(255, 255, 255, 0.96);
+      z-index: 20;
+      padding: 16px;
+    }
+  }
+}
