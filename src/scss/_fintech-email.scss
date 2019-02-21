@@ -523,6 +523,24 @@ ol {
       padding: 16px;
     }
   }
+
+  &__box {
+    border-radius: 8px;
+    background-color: #f1f1f1;
+    padding: 8px 24px 16px;
+
+    .label {
+      font-size: 12px;
+      font-weight: bold;
+      color: $black-base;
+
+      &--small {
+        font-size: 10px;
+        font-weight: normal;
+        color: $black-lighter;
+      }
+    }
+  }
 }
 
 .ft-banner__container {
