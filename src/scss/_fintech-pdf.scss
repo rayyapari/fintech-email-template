@@ -10,6 +10,10 @@ page[size="A4"] {
   width: 21cm;
   height: 29.7cm;
   font-family: "GothamPro";
+
+  &.mf {
+    font-family: 'Open Sans', sans-serif;
+  }
 }
 page[size="A4"][layout="landscape"] {
   width: 29.7cm;
@@ -284,6 +288,175 @@ page[size="A4"][layout="landscape"] {
       li {
         margin: 12px 0;
         margin-left: -8px;
+      }
+    }
+  }
+}
+
+.mf-report {
+  @media print {
+    table {
+      td.print {
+        display: none;
+      }
+    }
+
+    table.buy {
+      page-break-after: always;
+    }
+
+    table.sell {
+      margin-top: 64px;
+    }
+  }
+
+  &.mf-report__container {
+    width: 790px;
+    margin: auto;
+
+    .mf-report__table {
+      width: 790px;
+      padding: 16px;
+    }
+
+    .print__link {
+      display: block;
+      font-size: 14px;
+      text-align: right;
+      color: $green-base;
+
+      img {
+        margin-left: 8px;
+        vertical-align: middle;
+      }
+    }
+
+    .report__header {
+      margin: 16px 0;
+    }
+
+    .report__content {
+      height: calc(29.7cm - 165px);
+
+      .content__title {
+        margin: 0;
+        font-size: 28px;
+        font-weight: bold;
+      }
+
+      .content__period {
+        margin: 4px 0 0;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.38);
+
+        &-value {
+          font-weight: bold;
+          color: rgba(0, 0, 0, 0.54);
+        }
+      }
+
+      .content__owner {
+        margin: 0;
+        padding: 24px 0;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.38);
+        border-top: 1px solid #e0e0e0;
+        border-bottom: 1px solid #e0e0e0;
+
+        &-value {
+          padding-left: 16px;
+          font-weight: bold;
+          color: rgba(0, 0, 0, 0.54);
+        }
+      }
+
+      .content__balance--wrapper {
+        padding: 16px;
+        margin: 48px 0;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.54);
+        background-color: #f8f8f8;
+        -webkit-print-color-adjust: exact;
+      }
+
+      .content__balance-value {
+        font-size: 14px;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.7);
+      }
+
+      .content__transaction {
+        margin-bottom: 64px;
+
+        .transaction__title {
+          margin: 0;
+          font-size: 16px;
+          font-weight: bold;
+        }
+
+        .transaction__table {
+          margin-top: 16px;
+
+          &.empty {
+            padding: 40px;
+            text-align: center;
+            background-color: #f8f8f8;
+            -webkit-print-color-adjust: exact;
+
+            p {
+              margin: 16px 0 0;
+              font-size: 16px;
+              color: rgba(0, 0, 0, 0.38);
+            }
+
+            td {
+              border-bottom: 0 !important;
+            }
+          }
+
+          thead {
+            font-weight: bold;
+            background-color: #f8f8f8;
+            -webkit-print-color-adjust: exact;
+
+            td {
+              padding: 16px;
+            }
+          }
+
+          tbody {
+            td {
+              padding: 32px 16px;
+              border-bottom: 1px solid #e0e0e0;
+
+              span {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .report__footer {
+      padding-top: 32px;
+      border-top: 1px solid #e0e0e0;
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0.54);
+
+      p {
+        margin: 0;
+        font-size: 10px;
+      }
+
+      img {
+        margin-left: 8px;
+        vertical-align: middle;
+      }
+
+      i {
+        display: block;
+        text-align: right;
       }
     }
   }
