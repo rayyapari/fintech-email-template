@@ -108,7 +108,7 @@ ol {
   min-width: 100%;
   padding: 16px;
   background-color: $gray-alabaster;
-  border-radius: 4px;
+  border-radius: 8px;
 
   td {
     vertical-align: top;
@@ -191,6 +191,38 @@ ol {
       color: $green-base;
       font-size: $font-size-title;
       font-weight: bold;
+    }
+  }
+
+  &__birthday {
+    margin: auto;
+    font-size: 14px;
+    color: $black-light;
+    border-radius: 8px 8px;
+    background-image: url(https://ecs7.tokopedia.net/assets-fintech-email/img/gift-card/bg-birthday.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .content {
+      &--img {
+        padding: 16px 16px 0 16px;
+      }
+      &--desc {
+        padding: 16px;
+      }
+    }
+
+    .title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 0;
+      margin-bottom: 8px;
+      color: $black-base;
+    }
+
+    .img-icon {
+      width: 100%;
     }
   }
 }
@@ -630,7 +662,7 @@ ol {
 
     .desc {
       margin: 8px 0 0;
-      font-size: 11px;
+      font-size: 10px;
       color: $black-lighter;
       text-align: center;
     }
