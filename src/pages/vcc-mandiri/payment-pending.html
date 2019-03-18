@@ -1,0 +1,61 @@
+---
+title: VCC Mandiri - Payment Pending
+userName: Ray Yapari
+iconUrl: "https://ecs7.tokopedia.net/assets-fintech-email/img/vcc/icon-waiting-verification.png"
+iconAlt: "Menunggu Verifikasi Mitra"
+iconDesc: Menunggu Verifikasi Mitra
+---
+
+<table border="0" cellpadding="0" cellspacing="0" class="ft-body__container" align="center">
+  <!-- Header -->
+  {{> header type="vcc-mandiri"}}
+  <!-- end of Header -->
+
+  <!-- Body -->
+  {{> intro}}
+
+  <tr>
+    <td class="padding-y16 padding-x24">
+      Terima kasih telah mengajukan aktivasi Mandiri Kartu Kredit.
+      Pengajuanmu sedang diproses oleh <strong>Bank Mandiri</strong> sebagai mitra resmi Tokopedia.
+    </td>
+  </tr>
+
+  <!-- Table -->
+  <tr>
+    <td class="padding-y16 padding-x24 ft-table__summary">
+      <p><b>Ringkasan Pengajuan Mandiri Kartu Kredit</b></p>
+      <table cellpadding="0" cellspacing="0" width="100%" class="ft-table__summary-content">
+        <tr>
+          <td width="40%" align="left">Application ID</td>
+          <td width="60%" align="right"><b>299094074674</b></td>
+        </tr>
+        <tr>
+          <td width="40%" align="left">Tanggal Pengajuan</td>
+          <td width="60%" align="right"><b>16/03/2019</b></td>
+        </tr>
+        <tr>
+          <td width="40%" align="left">Nama Pemohon</td>
+          <td width="60%" align="right"><b>{{userName}}</b></td>
+        </tr>
+        <tr>
+          <td width="40%" align="left">Partner Penyedia</td>
+          <td width="60%" align="right"><b>Bank Mandiri</b></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <!-- end of Table -->
+
+  <tr>
+    <td class="padding-y16 padding-x24">
+      Jika sampai <strong>1 hari kerja</strong> status kamu belum berubah, hubungi kami <a class="ft-link" href="#">disini</a>.
+    </td>
+  </tr>
+
+  <!-- end of Body -->
+
+  <!-- Footer -->
+  {{> footer type="lending"}}
+  <!-- end of Footer -->
+</table>
