@@ -1,0 +1,59 @@
+---
+title: OVO Paylater - Monthly Notifier
+userName: Ray Yapari
+iconUrl: "https://ecs7.tokopedia.net/img/wallet/email/tokocard/tokocard-billing-cycle-publish.png"
+iconAlt: "Icon Pembelian Berhasil"
+iconDesc: Cicilanmu Sudah Bisa Dibayar
+---
+
+<table border="0" cellpadding="0" cellspacing="0" class="ft-body__container" align="center">
+  <!-- Header -->
+  {{> header type="tokoswipe"}}
+  <!-- end of Header -->
+
+  <!-- Body -->
+  {{> intro}}
+
+  <tr>
+    <td class="padding-y16 padding-x24">
+      Kamu sudah bisa membayar cicilan untuk transaksi di bawah ini. Yuk, lakukan pembayaran sebelum jatuh tempo untuk
+      menghindari denda.
+    </td>
+  </tr>
+
+  <!-- Table -->
+  <tr>
+    <td class="padding-y16 padding-x24 ft-table__summary">
+      <p><b>Ringkasan Pembelian</b></p>
+      <table cellpadding="0" cellspacing="0" width="100%" class="ft-table__summary-content">
+        <tr>
+          <td width="40%" align="left">Nomor Invoice</td>
+          <td width="60%" align="right"><b>INV/20190323/XIX/III/287757654</b></td>
+        </tr>
+        <tr>
+          <td width="40%" align="left">Nama Barang</td>
+          <td width="60%" align="right"><b>Headphone Marshall Major 2</b></td>
+        </tr>
+        <tr>
+          <td width="40%" align="left">Cicilan ke</td>
+          <td width="60%" align="right"><b>1/6 Bulan</b></td>
+        </tr>
+        <tr>
+          <td width="40%" align="left">Cicilan per Bulan</td>
+          <td width="60%" align="right"><b>Rp183.333</b></td>
+        </tr>
+        <tr>
+          <td width="40%" align="left">Total Pembayaran</td>
+          <td width="60%" align="right"><b>Rp1.100.000</b></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <!-- end of Table -->
+
+  <!-- end of Body -->
+
+  <!-- Footer -->
+  {{> footer type="lending"}}
+  <!-- end of Footer -->
+</table>

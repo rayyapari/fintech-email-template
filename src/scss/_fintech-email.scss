@@ -51,6 +51,12 @@ ol {
   padding-left: 16px;
 }
 
+.ft-linespacer {
+  height: 8px;
+  width: 100%;
+  background-color: $gray-gallery;
+}
+
 .ft-btn {
   display: inline-block;
   padding: 0 24px;
@@ -139,6 +145,7 @@ ol {
   height: 32px;
   margin-top: -4px;
   margin-right: 8px;
+
   &__small {
     width: 28px;
     height: 28px;
@@ -208,6 +215,7 @@ ol {
       &--img {
         padding: 16px 16px 0 16px;
       }
+
       &--desc {
         padding: 16px;
       }
@@ -449,21 +457,21 @@ ol {
       width: 100%;
       min-width: 100%;
 
-      tr > td {
+      tr>td {
         padding: 16px;
       }
 
-      tr > td.header {
+      tr>td.header {
         font-size: 12px;
         color: $black-light;
         background-color: $gray-alabaster;
       }
 
-      tr > td.body {
+      tr>td.body {
         font-size: 12px;
       }
 
-      tr > td.footer {
+      tr>td.footer {
         font-size: 14px;
         background-color: $gray-alabaster;
         border-top: 1px solid $gray-alto;
@@ -482,7 +490,8 @@ ol {
       width: 100%;
       min-width: 100%;
 
-      tr > {
+      tr> {
+
         td,
         th {
           padding: 8px 0;
@@ -490,11 +499,11 @@ ol {
         }
       }
 
-      tr:first-child > td {
+      tr:first-child>td {
         border-bottom: 1px solid $gray-alto !important;
       }
 
-      tr:last-child > td {
+      tr:last-child>td {
         border-bottom: none;
       }
     }
@@ -532,7 +541,8 @@ ol {
         margin: 0;
       }
 
-      tr > {
+      tr> {
+
         td,
         th {
           padding: 8px 0;
@@ -540,11 +550,11 @@ ol {
         }
       }
 
-      tr:first-child > td {
+      tr:first-child>td {
         border-bottom: 1px solid $gray-alto !important;
       }
 
-      tr:last-child > td {
+      tr:last-child>td {
         border-bottom: none;
       }
     }
@@ -609,12 +619,49 @@ ol {
   &__title {
     margin: 0 0 16px;
     font-size: 20px;
+
+    &.secondary {
+      margin: 0 0 8px;
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-size: 12px;
+    color: $black-light;
   }
 
   &__desc {
     margin: 16px 0 0;
     font-size: $font-size-caption;
     color: $black-lighter;
+  }
+}
+
+.ft-giftcard__recommendation {
+  &--top {
+    display: inline-block;
+    border-radius: 4px 4px 0 0;
+    overflow: hidden;
+
+    img {
+      max-width: 190px;
+    }
+  }
+
+  &--bottom {
+    padding: 10px 8px;
+    width: 190px;
+    background-color: $white-base;
+    border-top: 0 !important;
+    border: 1px solid $gray-alto;
+    border-radius: 0 0 4px 4px;
+
+    p {
+      margin: 0;
+      font-size: 11px;
+      color: $black-lighter;
+    }
   }
 }
 
@@ -773,11 +820,9 @@ ol {
       position: fixed;
       left: 24px;
       bottom: 75px;
-      background-image: linear-gradient(
-        to bottom,
+      background-image: linear-gradient(to bottom,
         rgba(255, 255, 255, 0),
-        #ffffff
-      );
+        #ffffff);
     }
   }
 
