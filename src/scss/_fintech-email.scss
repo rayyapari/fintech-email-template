@@ -618,6 +618,7 @@ ol {
 .ft-giftcard__redeem {
   &__title {
     margin: 0 0 16px;
+<<<<<<< HEAD
     font-size: 20px;
 
     &.secondary {
@@ -629,6 +630,9 @@ ol {
     margin: 0;
     font-size: 12px;
     color: $black-light;
+=======
+    font-size: 18px;
+>>>>>>> 69d6db2d259b76cc45fb5f69c50ecf15075885e8
   }
 
   &__desc {
@@ -639,6 +643,7 @@ ol {
 }
 
 .ft-giftcard__recommendation {
+<<<<<<< HEAD
   &--top {
     display: inline-block;
     border-radius: 4px 4px 0 0;
@@ -662,6 +667,29 @@ ol {
       font-size: 11px;
       color: $black-lighter;
     }
+=======
+  padding: 0;
+  width: 170px !important;
+  border: 1px solid $gray-alto;
+  border-radius: 8px;
+
+  img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .title {
+    width: 152px !important;
+    padding: 8px;
+    margin: 0;
+    font-size: 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: rgba(0, 0, 0, 0.54);
+>>>>>>> 69d6db2d259b76cc45fb5f69c50ecf15075885e8
   }
 }
 
