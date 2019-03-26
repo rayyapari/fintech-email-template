@@ -608,13 +608,38 @@ ol {
 .ft-giftcard__redeem {
   &__title {
     margin: 0 0 16px;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   &__desc {
     margin: 16px 0 0;
     font-size: $font-size-caption;
     color: $black-lighter;
+  }
+}
+
+.ft-giftcard__recommendation {
+  padding: 0;
+  width: 170px !important;
+  border: 1px solid $gray-alto;
+  border-radius: 8px;
+
+  img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .title {
+    width: 152px !important;
+    padding: 8px;
+    margin: 0;
+    font-size: 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: rgba(0, 0, 0, 0.54);
   }
 }
 
