@@ -122,6 +122,10 @@ ol {
     li {
       margin-bottom: 8px;
     }
+
+    a {
+      color: $green-base;
+    }
   }
 }
 
@@ -240,6 +244,7 @@ ol {
     margin: auto;
     padding: 16px;
     width: 435px !important;
+    height: 250px !important;
     color: $white-base;
     border-radius: 8px 8px 0 0;
 
