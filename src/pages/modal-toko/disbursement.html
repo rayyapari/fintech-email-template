@@ -1,0 +1,70 @@
+---
+title: Modal Toko Disbursement
+userName: Ray Yapari
+iconUrl: "https://ecs7.tokopedia.net/assets-fintech-email/img/modal-toko/ic-disbursement-success-min.png"
+iconAlt: "Icon Modal Toko Pencairan"
+iconDesc: Pencairan Pinjaman Modal Toko Telah ke Saldo Penghasilan Berhasil
+---
+
+<table border="0" cellpadding="0" cellspacing="0" class="ft-body__container" align="center">
+  <!-- Header -->
+  {{> header type="modal-toko"}}
+  <!-- end of Header -->
+
+  <!-- Body -->
+  {{> intro}}
+
+  <tr>
+    <td class="padding-y16 padding-x24">
+      Dana pinjaman bisa ditarik ke rekening pribadi melalui halaman Saldo.
+      Jangan lupa cek tanggal jatuh tempo pengembalian untuk menghindari denda keterlambatan.
+    </td>
+  </tr>
+
+  <!-- Table -->
+  <tr>
+    <td class="padding-y16 padding-x24 ft-table__summary">
+      <p><b>Ringkasan Pencairan Modal Toko</b></p>
+      <table cellpadding="0" cellspacing="0" width="100%" class="ft-table__summary-content">
+        <tr>
+          <td width="40%" align="left">Nama Pemohon</td>
+          <td width="60%" align="right"><b>{{userName}}</b></td>
+        </tr>
+        <tr>
+            <td width="40%" align="left">Jumlah Pinjaman</td>
+            <td width="60%" align="right"><b>Rp10.000.000</b></td>
+          </tr>
+        <tr>
+          <td width="50%" align="left">
+            Jumlah yang Dikembalikan<br />
+            <small>(Sudah termasuk bunga 5% dan biaya layanan)</small>
+          </td>
+          <td width="50%" align="right"><b>Rp10.050.000</b></td>
+        </tr>
+        <tr>
+          <td width="40%" align="left">Cicilan Perbulan</td>
+          <td width="60%" align="right"><b>Rp1.000.000</b></td>
+        </tr>
+        <tr>
+            <td width="40%" align="left">Jumlah Cicilan</td>
+            <td width="60%" align="right"><b>3x Cicilan</b></td>
+          </tr>
+      </table>
+    </td>
+  </tr>
+  <!-- end of Table -->
+
+  <tr>
+    <td class="padding-xy24" align="center">
+      <a class="ft-btn green large" href="https://www.tokopedia.com/deposit.pl?nref=dside">
+        Cek Saldo Penghasilan
+      </a>
+    </td>
+  </tr>
+
+  <!-- end of Body -->
+
+  <!-- Footer -->
+  {{> footer type="investment"}}
+  <!-- end of Footer -->
+</table>

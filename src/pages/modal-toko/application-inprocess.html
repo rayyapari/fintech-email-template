@@ -1,0 +1,70 @@
+---
+title: Modal Toko Application In Process
+userName: Ray Yapari
+iconUrl: "https://ecs7.tokopedia.net/assets-fintech-email/img/modal-toko/ic-modal-toko-inprocess.png"
+iconAlt: "Icon Modal Toko Diproses"
+iconDesc: Pengajuan Aktivasi Pinjaman Modal Toko Sedang Diproses
+---
+
+<table border="0" cellpadding="0" cellspacing="0" class="ft-body__container" align="center">
+  <!-- Header -->
+  {{> header type="modal-toko"}}
+  <!-- end of Header -->
+
+  <!-- Body -->
+  {{> intro}}
+
+  <tr>
+    <td class="padding-y16 padding-x24">
+      Pengajuan pinjamanmu telah diteruskan ke Modalku, partner resmi Tokopedia untuk Pinjaman Modal Toko.
+      Kami akan infokan hasil aktivasimu paling lambat <b>1 hari kerja</b> setelah pengajuan.
+    </td>
+  </tr>
+
+  <!-- Table -->
+  <tr>
+    <td class="padding-y16 padding-x24 ft-table__summary">
+      <p><b>Ringkasan Aktivasi Pinjaman Modal Toko</b></p>
+      <table cellpadding="0" cellspacing="0" width="100%" class="ft-table__summary-content">
+        <tr>
+          <td width="40%" align="left">Nama Pemiliki Toko</td>
+          <td width="60%" align="right"><b>{{userName}}</b></td>
+        </tr>
+        <tr>
+            <td width="40%" align="left">Partner Penyedia</td>
+            <td width="60%" align="right"><b>Modalku</b></td>
+          </tr>
+        <tr>
+          <td width="40%" align="left">ID Pengajuan</td>
+          <td width="60%" align="right"><b>MT0921031</b></td>
+        </tr>
+        <tr>
+          <td width="40%" align="left">Limit Pinjaman Modal Toko</td>
+          <td width="60%" align="right"><b>Rp50.000.000</b></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <!-- end of Table -->
+
+  <tr>
+    <td class="padding-y16 padding-x24">
+      Jika status pengajuan belum berubah hingga <b>23 Maret 2019</b>,
+      hubungi kami <a class="ft-link" href="https://www.tokopedia.com/help/">di sini</a>.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="padding-xy24" align="center">
+      <a class="ft-btn green large" href="https://www.tokopedia.com/deposit.pl?nref=dside">
+        Cek Status Aktivasi
+      </a>
+    </td>
+  </tr>
+
+  <!-- end of Body -->
+
+  <!-- Footer -->
+  {{> footer type="investment"}}
+  <!-- end of Footer -->
+</table>

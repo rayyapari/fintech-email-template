@@ -1,0 +1,67 @@
+---
+title: Modal Toko Billing Cycle Publish
+userName: Ray Yapari
+iconUrl: "https://ecs7.tokopedia.net/assets-fintech-email/img/modal-toko/ic-repayment-publish-min.png"
+iconAlt: "Icon Modal Toko Pencairan"
+iconDesc: Tagihan Modal Toko Telah Terbit
+---
+
+<table border="0" cellpadding="0" cellspacing="0" class="ft-body__container" align="center">
+  <!-- Header -->
+  {{> header type="modal-toko"}}
+  <!-- end of Header -->
+
+  <!-- Body -->
+  {{> intro}}
+
+  <tr>
+    <td class="padding-y16 padding-x24">
+      Cek jumlah tagihan dan lakukan pembayaran sebelum tanggal jatuh tempo.
+      Terlambat bayar akan dikenakan denda sebesar xx% per bulan dari jumlah cicilan.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="padding-xy24" align="center">
+      <a class="ft-btn green large" href="https://www.tokopedia.com/fm/modal-toko/">
+        Bayar Tagihan
+      </a>
+    </td>
+  </tr>
+
+  <!-- Table -->
+  <tr>
+    <td class="padding-y16 padding-x24 ft-table__summary">
+      <p><b>Ringkasan Tagihan Modal Toko</b></p>
+      <table cellpadding="0" cellspacing="0" width="100%" class="ft-table__summary-content">
+        <tr>
+          <td width="40%" align="left">ID Tagihan</td>
+          <td width="60%" align="right"><b>MT38922</b></td>
+        </tr>
+        <tr>
+            <td width="40%" align="left">Jumlah Pinjaman</td>
+            <td width="60%" align="right"><b>Rp10.000.000</b></td>
+          </tr>
+        <tr>
+          <td width="50%" align="left">Jumlah Tagihan</td>
+          <td width="50%" align="right"><b>Rp100.000</b></td>
+        </tr>
+        <tr>
+          <td width="40%" align="left">Periode Tagihan</td>
+          <td width="60%" align="right"><b>15 Janurari - 14 Februari 2019</b></td>
+        </tr>
+        <tr>
+            <td width="40%" align="left">Jatuh Tempo Tagihan</td>
+            <td width="60%" align="right"><b>14 Februari 2019</b></td>
+          </tr>
+      </table>
+    </td>
+  </tr>
+  <!-- end of Table -->
+
+  <!-- end of Body -->
+
+  <!-- Footer -->
+  {{> footer type="investment"}}
+  <!-- end of Footer -->
+</table>

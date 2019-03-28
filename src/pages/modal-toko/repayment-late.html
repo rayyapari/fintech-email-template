@@ -1,0 +1,67 @@
+---
+title: Modal Toko Repayment Late
+userName: Ray Yapari
+iconUrl: "https://ecs7.tokopedia.net/assets-fintech-email/img/modal-toko/ic-repayment-late-min.png"
+iconAlt: "Icon Modal Toko Pembayaran Sukses"
+iconDesc: Kamu Terlambat Bayar Tagihan Modal Toko
+---
+
+<table border="0" cellpadding="0" cellspacing="0" class="ft-body__container" align="center">
+  <!-- Header -->
+  {{> header type="modal-toko"}}
+  <!-- end of Header -->
+
+  <!-- Body -->
+  {{> intro}}
+
+  <tr>
+    <td class="padding-y16 padding-x24">
+      Pembayaran tagihan telah melewati jatuh tempo pada tanggal <b>21 Maret 2019</b>.
+      Tagihanmu dikenakan denda keterlambatan sebesar <b>xx%</b> per bulan dari jumlah cicilan.
+    </td>
+  </tr>
+
+  <!-- Table -->
+  <tr>
+    <td class="padding-y16 padding-x24 ft-table__summary">
+      <p><b>Ringkasan Pembayaran Tagihan</b></p>
+      <table cellpadding="0" cellspacing="0" width="100%" class="ft-table__summary-content">
+        <tr>
+          <td width="40%" align="left">ID Tagihan</td>
+          <td width="60%" align="right"><b>MT38922</b></td>
+        </tr>
+        <tr>
+          <td width="50%" align="left">Periode Tagihan</td>
+          <td width="50%" align="right"><b>15 Janurari - 14 Februari 2019</b></td>
+        </tr>
+        <tr>
+          <td width="40%" align="left">Cicilan Pokok</td>
+          <td width="60%" align="right"><b>Rp1.000.000</b></td>
+        </tr>
+        <tr>
+          <td width="40%" align="left">Denda Keterlambatan (1 kali)</td>
+          <td width="60%" align="right"><b>Rp20.000</b></td>
+        </tr>
+        <tr>
+          <td width="40%" align="left"><b>Total Tagihan</b></td>
+          <td width="60%" align="right"><b>Rp1.020.000</b></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <!-- end of Table -->
+
+  <tr>
+    <td class="padding-y16 padding-x24" align="center">
+      <a class="ft-btn green large" href="https://tokopedia.com/fm/modal-toko/">
+        Cek Detail Tagihan
+      </a>
+    </td>
+  </tr>
+
+  <!-- end of Body -->
+
+  <!-- Footer -->
+  {{> footer type="investment"}}
+  <!-- end of Footer -->
+</table>

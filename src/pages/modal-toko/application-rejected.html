@@ -1,0 +1,60 @@
+---
+title: Modal Toko Application Rejected
+userName: Ray Yapari
+iconUrl: "https://ecs7.tokopedia.net/assets-fintech-email/img/modal-toko/ic-modal-toko-failed.png"
+iconAlt: "Icon Modal Toko Ditolak"
+iconDesc: Maaf, Pengajuan Aktivasi Pinjaman Modal Toko Tidak Disetujui
+---
+
+<table border="0" cellpadding="0" cellspacing="0" class="ft-body__container" align="center">
+  <!-- Header -->
+  {{> header type="modal-toko"}}
+  <!-- end of Header -->
+
+  <!-- Body -->
+  {{> intro}}
+
+  <tr>
+    <td class="padding-y16 padding-x24">
+      Modalku sebagai partner resmi Tokopedia menolak pengajuan aktivasi karena dokumen dan datamu belum memenuhi syarat.
+      Kamu masih bisa mengajukan aktivasi ulang pada <b>29 Maret 2019</b>.
+    </td>
+  </tr>
+
+  <!-- Table -->
+  <tr>
+    <td class="padding-y16 padding-x24 ft-table__summary">
+      <p><b>Ringkasan Aktivasi Pinjaman Modal Toko</b></p>
+      <table cellpadding="0" cellspacing="0" width="100%" class="ft-table__summary-content">
+        <tr>
+          <td width="40%" align="left">Nama Pemiliki Toko</td>
+          <td width="60%" align="right"><b>{{userName}}</b></td>
+        </tr>
+        <tr>
+            <td width="40%" align="left">Partner Penyedia</td>
+            <td width="60%" align="right"><b>Modalku</b></td>
+          </tr>
+        <tr>
+          <td width="40%" align="left">ID Pengajuan</td>
+          <td width="60%" align="right"><b>MT0921031</b></td>
+        </tr>
+        <tr>
+          <td width="40%" align="left">Limit Pinjaman Modal Toko</td>
+          <td width="60%" align="right"><b>Rp50.000.000</b></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <!-- end of Table -->
+
+  <tr>
+    <td class="padding-y16 padding-x24">
+      Informasi mengenai Modal Toko bisa dilihat <a class="ft-link" href="https://www.tokopedia.com/deposit.pl?nref=dside">di sini</a>.
+    </td>
+  </tr>
+  <!-- end of Body -->
+
+  <!-- Footer -->
+  {{> footer type="investment"}}
+  <!-- end of Footer -->
+</table>
