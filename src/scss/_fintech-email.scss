@@ -505,7 +505,7 @@ ol {
       }
 
       tr:first-child>td {
-        border-bottom: 1px solid $gray-alto !important;
+        border-bottom: 1px solid $gray-alto;
       }
 
       tr:last-child>td {
@@ -847,3 +847,12 @@ ol {
 }
 
 /* end of Onboarding Styles */
+
+.ft-mcl {
+  &__loan {
+    margin-top: 8px;
+    td {
+      border-bottom: none !important;
+    }
+  }
+}
