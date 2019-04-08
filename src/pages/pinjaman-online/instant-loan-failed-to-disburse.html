@@ -1,0 +1,79 @@
+---
+title: Pinjaman Online - Dana Instan - Failed to Disburse
+userName: Ray Yapari
+iconUrl: "https://ecs7.tokopedia.net/assets-fintech-email/img/vcc/icon-application-rejected.png"
+iconAlt: "Icon Pencairan Tidak Berhasil"
+iconDesc: Pencairan Dana Tidak Berhasil
+---
+
+<table border="0" cellpadding="0" cellspacing="0" class="ft-body__container" align="center">
+  <!-- Header -->
+  {{> header type="pinjaman-online"}}
+  <!-- end of Header -->
+
+  <!-- Body -->
+  {{> intro}}
+
+  <tr>
+    <td class="padding-y16 padding-x24">
+      Pencairan dana ke rekening gagal dilakukan. Kamu dapat mengulangi proses pengajuan, pastikan data nomor rekening
+      sudah benar.
+    </td>
+  </tr>
+
+  <!-- Table -->
+  <tr>
+    <td class="padding-y16 padding-x24 ft-table__summary">
+      <p><b>Ringkasan Pengajuan</b></p>
+      <table cellpadding="0" cellspacing="0" width="100%" class="ft-table__summary-content">
+        <tr>
+          <td width="40%" align="left">ID Pinjaman</td>
+          <td width="60%" align="right"><b>{ID_Pinjaman}</b></td>
+        </tr>
+        <tr>
+          <td width="40%" align="left">Jumlah Pinjaman</td>
+          <td width="60%" align="right"><b>RpX.XXX.XXX</b></td>
+        </tr>
+        <tr>
+          <td width="40%" align="left">Lama Pinjaman</td>
+          <td width="60%" align="right"><b>X Hari</b></td>
+        </tr>
+        <tr>
+          <td width="40%" align="left">Mitra Penyedia</td>
+          <td width="60%" align="right"><b>{Mitra_Name}</b></td>
+        </tr>
+        <tr>
+          <td width="40%" align="left">Rekening Pencairan</td>
+          <td width="60%" align="right">
+            <small>PT. BCA (BANK CENTRAL ASIA) TBK</small>
+            <br />
+            <b>0123456789</b>
+            <br />
+            <small>{userName}</small>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <!-- end of Table -->
+
+  <tr>
+    <td class="padding-y16 padding-x24" align="center">
+      <a class="ft-btn green large" href="#">
+        Lihat Program Pinjaman
+      </a>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="padding-y16 padding-x24">
+      Jika butuh bantuan, hubungi kami di <a class="ft-link" href="#">sini</a>.
+    </td>
+  </tr>
+
+  <!-- end of Body -->
+
+  <!-- Footer -->
+  {{> footer type="lending"}}
+  <!-- end of Footer -->
+</table>
