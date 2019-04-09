@@ -240,7 +240,7 @@ ol {
 }
 
 .ft-giftcard__container {
-  padding: 56px 24px 64px;
+  padding: 24px 24px 64px;
   background-image: url("https://ecs7.tokopedia.net/assets-fintech-email/img/gift-card/background-illustration.png");
   background-size: 100%;
   background-position: top center;
@@ -248,29 +248,41 @@ ol {
 }
 
 .ft-giftcard__content {
+  &__detail {
+    width: 435px !important;
+    background-color: $white-base;
+    border-radius: 8px 8px 0 0;
+    border: 1px solid #e0e0e0;
+    margin: auto;
+    padding: 12px;
+
+    .giftcard__amount {
+      margin: 0;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .giftcard__validity {
+      margin: 0;
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0.38);
+    }
+  }
   &__top {
     margin: auto;
     padding: 16px;
     width: 435px !important;
     height: 250px !important;
     color: $white-base;
-    border-radius: 8px 8px 0 0;
+
+    &.without-detail {
+      border-radius: 8px 8px 0 0;
+    }
 
     background-image: url("https://ecs7.tokopedia.net/assets-fintech-email/img/gift-card/card-design-toped.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-    .giftcard__amount {
-      margin: 0;
-      font-size: 24px;
-      font-weight: bold;
-    }
-
-    .giftcard__validity {
-      margin: 175px 0 0;
-      font-size: 14px;
-    }
   }
 
   &__bottom {
