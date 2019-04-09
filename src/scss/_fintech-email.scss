@@ -268,12 +268,14 @@ ol {
       color: rgba(0, 0, 0, 0.38);
     }
   }
+
   &__top {
     margin: auto;
     padding: 16px;
     width: 435px !important;
     height: 250px !important;
     color: $white-base;
+    border: 1px solid #e0e0e0;
 
     &.without-detail {
       border-radius: 8px 8px 0 0;
@@ -291,6 +293,7 @@ ol {
     width: 435px !important;
     background-color: $white-base;
     border-radius: 0 0 8px 8px;
+    border: 1px solid #e0e0e0;
 
     &--payment {
       border: 1px solid $gray-alto;
@@ -327,6 +330,7 @@ ol {
     width: 435px !important;
     background-color: $white-base;
     border-radius: 8px;
+    border: 1px solid #e0e0e0;
 
     .giftcard__label {
       margin: 0;
@@ -662,14 +666,14 @@ ol {
   border: 1px solid $gray-alto;
   border-radius: 8px;
 
-   img {
+  img {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     margin-bottom: 0;
     width: 100%;
   }
 
-   .title {
+  .title {
     width: 152px !important;
     padding: 8px;
     margin: 0;
@@ -863,6 +867,7 @@ ol {
 .ft-mcl {
   &__loan {
     margin-top: 8px;
+
     td {
       border-bottom: none !important;
     }
