@@ -252,9 +252,11 @@ ol {
     width: 435px !important;
     background-color: $white-base;
     border-radius: 8px 8px 0 0;
-    border: 1px solid #e0e0e0;
     margin: auto;
-    padding: 12px;
+    padding: 16px;
+    border-top: 1px solid $gray-alto;
+    border-left: 1px solid $gray-alto;
+    border-right: 1px solid $gray-alto;
 
     .giftcard__amount {
       margin: 0;
@@ -275,7 +277,8 @@ ol {
     width: 435px !important;
     height: 250px !important;
     color: $white-base;
-    border: 1px solid #e0e0e0;
+    border-left: 1px solid $gray-alto;
+    border-right: 1px solid $gray-alto;
 
     &.without-detail {
       border-radius: 8px 8px 0 0;
@@ -293,7 +296,9 @@ ol {
     width: 435px !important;
     background-color: $white-base;
     border-radius: 0 0 8px 8px;
-    border: 1px solid #e0e0e0;
+    border-bottom: 1px solid $gray-alto;
+    border-left: 1px solid $gray-alto;
+    border-right: 1px solid $gray-alto;
 
     &--payment {
       border: 1px solid $gray-alto;
@@ -633,6 +638,7 @@ ol {
   &__desc {
     margin: 0;
     color: $black-light;
+    line-height: 1.5;
   }
 }
 
