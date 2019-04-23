@@ -879,3 +879,28 @@ ol {
     }
   }
 }
+
+.ft-product__intro {
+  padding: 16px;
+  border: 1px solid $gray-alto;
+  border-radius: 4px;
+
+  img {
+    max-width: 100%;
+  }
+
+  .text--wrapper {
+    padding-left: 16px;
+  }
+
+  .title {
+    margin: 0;
+    font-size: 12px;
+  }
+
+  .desc {
+    margin: 0;
+    color: $black-lighter;
+    font-size: 12px;
+  }
+}
