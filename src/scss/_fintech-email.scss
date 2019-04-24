@@ -63,7 +63,7 @@ ol {
   color: $white-base;
   font-size: 14px;
   font-weight: bold;
-  border-radius: 4px;
+  border-radius: 8px;
   box-sizing: border-box;
   text-align: center;
 
@@ -548,6 +548,80 @@ ol {
     }
   }
 
+  &__eg-report {
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+      color: $black-base;
+    }
+
+    &-content {
+      width: 100%;
+      min-width: 100%;
+
+      tr>td {
+        padding: 12px 0;
+        vertical-align: top;
+      }
+
+      tr:nth-child(2)>td {
+        border-bottom: 1px solid $gray-alto;
+        padding-bottom: 24px;
+      }
+
+      tr:last-child>td {
+        padding-top: 24px;
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  &__eg-timeline {
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+      color: $black-base;
+    }
+
+    .box {
+      &-top {
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+        padding: 8px 8px 0;
+        margin-top: 0px;
+        height: 20px;
+        background-color: #f3f4f5;
+
+        &.active {
+          background-color: #d6ffde;
+        }
+      }
+      &-bottom {
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+        padding: 0 8px 8px;
+        margin-top: -4px;
+        height: 18px;
+        background-color: #f3f4f5;
+
+        &.active {
+          background-color: #d6ffde;
+        }
+      }
+      text-align: center;
+      width: 100px;
+    }
+
+    tr:first-child>td {
+      border-bottom: 1px solid #f3f4f5;
+    }
+
+    &-content {
+      width: 100%;
+      min-width: 100%;
+    }
+  }
+
   &__gc-multiple {
     .title {
       margin: 0 0 16px;
@@ -885,6 +959,11 @@ ol {
   border: 1px solid $gray-alto;
   border-radius: 4px;
 
+  &--mutualfund {
+    border-radius: 8px;
+    padding: 12px 8px;
+  }
+
   img {
     max-width: 100%;
   }
@@ -902,5 +981,18 @@ ol {
     margin: 0;
     color: $black-lighter;
     font-size: 12px;
+  }
+}
+
+.ft-unf-ticker {
+  width: 100%;
+  min-width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+
+  &--default {
+    background: url("https://ecs7.tokopedia.net/img/wallet/email/ic_system_info.png") no-repeat;
+    background-size: 30px;
+    background-color: #ebf6f6;
   }
 }

@@ -11,7 +11,7 @@ page[size="A4"] {
   height: 29.7cm;
   font-family: "GothamPro";
 
-  &.mf {
+  &.report {
     font-family: 'Open Sans', sans-serif;
   }
 }
@@ -53,7 +53,7 @@ page[size="A4"][layout="landscape"] {
       &--amount {
         font-size: 18px;
         font-weight: bold;
-        color: $black-base;
+        color: #000000;
         margin: 16px;
       }
 
@@ -293,7 +293,7 @@ page[size="A4"][layout="landscape"] {
   }
 }
 
-.mf-report {
+.pdf-report {
   @media print {
     table {
       td.print {
@@ -310,11 +310,11 @@ page[size="A4"][layout="landscape"] {
     }
   }
 
-  &.mf-report__container {
+  &.pdf-report__container {
     width: 790px;
     margin: auto;
 
-    .mf-report__table {
+    .pdf-report__table {
       width: 790px;
       padding: 16px;
     }
@@ -332,20 +332,32 @@ page[size="A4"][layout="landscape"] {
     }
 
     .report__header {
-      margin: 16px 0;
+      margin: 16px 0 24px;
     }
 
     .report__content {
-      height: calc(29.7cm - 165px);
+      min-height: calc(29.7cm - 165px);
+
+      &--wrapper {
+        vertical-align: top;
+      }
+
+      .info {
+        font-size: 12px;
+        color: $black-light;
+        margin-top: 0;
+        margin-bottom: 48px;
+      }
 
       .content__title {
         margin: 0;
         font-size: 28px;
         font-weight: bold;
+        color: #000000;
       }
 
       .content__period {
-        margin: 4px 0 0;
+        margin-top: 12px;
         font-size: 14px;
         color: rgba(0, 0, 0, 0.38);
 
@@ -357,16 +369,51 @@ page[size="A4"][layout="landscape"] {
 
       .content__owner {
         margin: 0;
-        padding: 24px 0;
+        padding: 8px 0;
         font-size: 14px;
         color: rgba(0, 0, 0, 0.38);
-        border-top: 1px solid #e0e0e0;
-        border-bottom: 1px solid #e0e0e0;
 
         &-value {
           padding-left: 16px;
+          color: $black-base;
+          float: right;
+        }
+      }
+
+      .content__summary {
+        margin: 24px 0 16px;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+
+        &--wrapper {
+          padding: 16px;
+
+          &.left {
+            border-right: 1px solid #e0e0e0;
+          }
+        }
+
+        .summary-label {
+          font-size: 14px;
+          color: $black-light;
+          margin: 0;
+
+          &.bold {
+            font-weight: bold;
+          }
+        }
+
+        .summary-amount {
+          font-size: 22px;
           font-weight: bold;
-          color: rgba(0, 0, 0, 0.54);
+          color: #000000;
+          margin: 8px 0;
+        }
+
+        .summary-desc {
+          font-size: 16px;
+          color: $black-light;
+          margin: 0;
         }
       }
 
@@ -386,16 +433,41 @@ page[size="A4"][layout="landscape"] {
       }
 
       .content__transaction {
-        margin-bottom: 64px;
+        margin-bottom: 48px;
+
+        .label {
+          font-size: 12px;
+          margin: 0;
+
+          &--main {
+            color: $black-light;
+          }
+
+          &--desc {
+            color: $black-lighter;
+          }
+
+          &--in {
+            font-weight: bold;
+            color: #03ac0e;
+          }
+
+          &--out {
+            font-weight: bold;
+            color: #d6001c;
+          }
+        }
 
         .transaction__title {
           margin: 0;
-          font-size: 16px;
+          font-size: 28px;
           font-weight: bold;
+          color: #000000;
         }
 
         .transaction__table {
           margin-top: 16px;
+          font-size: 12px;
 
           &.empty {
             padding: 40px;
@@ -425,9 +497,14 @@ page[size="A4"][layout="landscape"] {
           }
 
           tbody {
+            tr:last-child td {
+              border-bottom: 1px solid rgba(49, 53, 59, 0.68);
+            }
+
             td {
               padding: 32px 16px;
               border-bottom: 1px solid #e0e0e0;
+              vertical-align: top;
 
               span {
                 display: block;
@@ -439,7 +516,7 @@ page[size="A4"][layout="landscape"] {
     }
 
     .report__footer {
-      padding-top: 32px;
+      padding-top: 16px;
       border-top: 1px solid #e0e0e0;
       font-size: 12px;
       color: rgba(0, 0, 0, 0.54);
