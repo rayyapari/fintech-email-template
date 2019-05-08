@@ -1,0 +1,79 @@
+/* Button */
+.ft-btn {
+  display: inline-block;
+  padding: 0 24px;
+  color: $white-base;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 8px;
+  box-sizing: border-box;
+  text-align: center;
+
+  &.green-secondary {
+    background-color: $white-base;
+    color: $green-base;
+    border: 1px solid $green-base;
+  }
+
+  &.green {
+    background-color: $green-base;
+  }
+
+  &.orange {
+    background-color: $orange-base;
+  }
+
+  &.ghost {
+    background-color: $white-base;
+    color: $black-lighter;
+    border: 1px solid $gray-alto;
+  }
+
+  &.large {
+    height: 48px;
+    line-height: 48px;
+  }
+
+  &.medium {
+    height: 40px;
+    line-height: 40px;
+  }
+
+  &.small {
+    font-size: 12px;
+    height: 32px;
+    line-height: 32px;
+  }
+
+  &.block {
+    display: block;
+    width: 100%;
+  }
+}
+
+/* end of Button */
+
+/* Ticker */
+.ft-unf-ticker {
+  width: 100%;
+  min-width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+
+  &--default {
+    background-color: #ebf6f6;
+    background-image: url("https://ecs7.tokopedia.net/img/wallet/email/ic_system_info.png");
+    background-repeat: no-repeat;
+    background-size: 30px;
+  }
+
+  &--warning {
+    background-color: #fffae6;
+    background-image: url("https://ecs7.tokopedia.net/assets-fintech-email/img/icon/icon-ticker-warning.png");
+    background-position: -4px -4px;
+    background-repeat: no-repeat;
+  }
+}
+
+/* end of Ticker */
