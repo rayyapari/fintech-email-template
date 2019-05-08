@@ -109,6 +109,20 @@ ol {
   }
 }
 
+.unf-ticker {
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: rgba(49, 53, 59, 0.88);
+  overflow: hidden;
+
+  &--warning {
+    background-image: url("https://ecs7.tokopedia.net/assets-fintech-email/img/icon/icon-ticker-warning.png");
+    background-color: #fffae6;
+    background-position: -4px -4px;
+    background-repeat: no-repeat;
+  }
+}
+
 .ft-info__container {
   width: 100%;
   min-width: 100%;
@@ -436,7 +450,7 @@ ol {
     }
 
     .card-content__body {
-      padding: 16px 8px;
+      padding: 16px;
       border-top: 1px solid $gray-alto;
       border-bottom: 1px solid $gray-alto;
 
@@ -596,6 +610,7 @@ ol {
           background-color: #d6ffde;
         }
       }
+
       &-bottom {
         border-bottom-right-radius: 8px;
         border-bottom-left-radius: 8px;
@@ -608,6 +623,7 @@ ol {
           background-color: #d6ffde;
         }
       }
+
       text-align: center;
       width: 100px;
     }
@@ -921,8 +937,8 @@ ol {
       left: 24px;
       bottom: 75px;
       background-image: linear-gradient(to bottom,
-        rgba(255, 255, 255, 0),
-        #ffffff);
+          rgba(255, 255, 255, 0),
+          #ffffff);
     }
   }
 
@@ -995,4 +1011,16 @@ ol {
     background-size: 30px;
     background-color: #ebf6f6;
   }
+}
+
+.ft-referral--wrapper {
+  padding: 16px;
+  font-size: 11px;
+  border-radius: 4px;
+  border: 1px solid $gray-alto;
+  background-image: url("https://ecs7.tokopedia.net/assets-fintech-email/img/asuransi/bg-section-referral-new.png");
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }

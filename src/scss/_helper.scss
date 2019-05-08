@@ -80,10 +80,12 @@
   &-top {
     vertical-align: top;
   }
+
   &-bottom {
     vertical-align: bottom;
   }
 }
+
 .u-clearfix::before,
 .u-clearfix::after {
   content: " ";
@@ -92,4 +94,8 @@
 
 .u-clearfix::after {
   clear: both;
+}
+
+.ft-bold {
+  font-weight: bold;
 }
