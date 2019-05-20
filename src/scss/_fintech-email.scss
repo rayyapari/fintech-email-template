@@ -945,3 +945,25 @@ ol {
   background-repeat: no-repeat;
   overflow: hidden;
 }
+
+.ft-referral-info--wrapper {
+  padding: 24px 16px;
+  border-radius: 8px;
+  border: 1px solid $gray-alto;
+  background-image: url("https://ecs7.tokopedia.net/assets-fintech-email/img/asuransi/bg-referral-info-new.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  .title {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .desc {
+    margin: 8px 0 16px;
+    color: $black-light;
+    font-size: 12px;
+  }
+}
