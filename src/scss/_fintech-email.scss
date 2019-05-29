@@ -969,22 +969,16 @@ ol {
 }
 
 // modal-toko
-.steps-inline {
-  .step {
-    max-width: calc((100% / 3) - 24px);
-    display: inline-block;
-    padding: 8px;
-    vertical-align: top;
-    &-img {
-      height: 220px;
-      img {
-        max-width: 100%;
-      }
+.step {
+  &-img {
+    height: 230px;
+    img {
+      max-width: 100%;
     }
-    &-caption {
-      text-align: left;
-      font-size: 12px;
-      padding: 0 16px;
-    }
+  }
+  &-caption {
+    text-align: left;
+    font-size: 12px;
+    padding: 0 16px;
   }
 }
