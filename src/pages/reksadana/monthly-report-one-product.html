@@ -1,0 +1,70 @@
+---
+title: Monthly Report
+userName: Ray Yapari
+iconUrl: "https://ecs7.tokopedia.net/img/wallet/email/eg-monthly-report.png"
+iconAlt: 'Laporan Bulanan Reksa Dana Telah Terbit'
+iconDesc: Laporan Bulanan Reksa Dana Telah Terbit
+---
+
+<table border="0" cellpadding="0" cellspacing="0" class="ft-body__container" align="center">
+  <!-- Header -->
+  {{> header type="reksadana"}}
+  <!-- end of Header -->
+
+  <!-- Body -->
+  {{> intro}}
+
+  <tr>
+    <td class="padding-y16 padding-x24">
+      Berikut ringkasan investasi Reksa Dana mu untuk periode <strong>Januari 2019</strong>.
+      Kamu bisa pantau detail investasimu dengan download laporan dibawah ini.
+    </td>
+  </tr>
+
+  <!-- Table -->
+  <tr>
+    <td class="padding-xy24 ft-table__report">
+      <table cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 16px">
+        <tr>
+          <td width="70%" align="left">
+            <h1 style="font-size: 18px; font-weight: bold">Ringkasan Investasi</h1>
+          </td>
+          <td width="30%" align="right">
+            <a class="ft-link">Download Laporan</a>
+          </td>
+      </table>
+
+      <table cellpadding="0" cellspacing="0" width="100%" class="ft-table__report-content">
+        <tr>
+          <td width="33%" class="header"><strong>Produk Reksa Dana</strong></td>
+          <td width="33%" class="header"><strong>Jumlah Investasi</strong></td>
+          <td width="33%" class="header"><strong>Total Keuntungan</strong></td>
+        </tr>
+
+        <tr>
+          <td width="33%" class="body"><b>Syailendra Dana Kas</b></td>
+          <td width="33%" class="body">
+            Rp2.450.000
+            <br>
+            <small>(10 Unit)</small>
+          </td>
+          <td width="33%" class="body"><span class="ft-link ft-bold">+Rp15.000</span></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <!-- end of Table -->
+
+  <tr>
+    <td class="padding-y16 padding-x24">
+      Untuk bantuan atau informasi lebih lanjut hubungi,
+      <a class="ft-link" href="https://www.tokopedia.com/help">di sini</a>.
+    </td>
+  </tr>
+  <!-- end of Body -->
+
+  <!-- Footer -->
+  {{> footer type="mf-monthly-report"}}
+  <!-- end of Footer -->
+</table>

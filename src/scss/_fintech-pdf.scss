@@ -319,18 +319,6 @@ page[size="A4"][layout="landscape"] {
       padding: 16px;
     }
 
-    .print__link {
-      display: block;
-      font-size: 14px;
-      text-align: right;
-      color: $green-base;
-
-      img {
-        margin-left: 8px;
-        vertical-align: middle;
-      }
-    }
-
     .report__header {
       margin: 16px 0 24px;
     }
@@ -385,12 +373,21 @@ page[size="A4"][layout="landscape"] {
         border: 1px solid #e0e0e0;
         border-radius: 8px;
 
+        .divider {
+          border-top: 1px solid #e0e0e0;
+        }
+
         &--wrapper {
           padding: 16px;
 
           &.left {
             border-right: 1px solid #e0e0e0;
           }
+        }
+
+        .summary-subamount {
+          font-size: 16px;
+          margin: 0;
         }
 
         .summary-label {
@@ -400,6 +397,10 @@ page[size="A4"][layout="landscape"] {
 
           &.bold {
             font-weight: bold;
+          }
+
+          &.green {
+            color: $green-base;
           }
         }
 
@@ -415,21 +416,6 @@ page[size="A4"][layout="landscape"] {
           color: $black-light;
           margin: 0;
         }
-      }
-
-      .content__balance--wrapper {
-        padding: 16px;
-        margin: 48px 0;
-        font-size: 12px;
-        color: rgba(0, 0, 0, 0.54);
-        background-color: #f8f8f8;
-        -webkit-print-color-adjust: exact;
-      }
-
-      .content__balance-value {
-        font-size: 14px;
-        font-weight: bold;
-        color: rgba(0, 0, 0, 0.7);
       }
 
       .content__transaction {
