@@ -1,6 +1,10 @@
 ---
 layout: pdf
 title: Reksa Dana - Monthly Report
+iconHeader: 'https://ecs7.tokopedia.net/img/wallet/email/logo-reksadana_tokopedia.png'
+iconHeaderAlt: 'Logo Tokopedia Reksadana'
+iconFooter: 'https://ecs7.tokopedia.net/assets-mutualfund-frontend/prod/0dcfacc973d0ebc7917ef8707120a83d.png'
+iconFooterAlt: 'Logo Bareksa'
 ---
 
 <page size="A4" class="report">
@@ -9,17 +13,7 @@ title: Reksa Dana - Monthly Report
       <tr>
         <td>
           <!-- section Header -->
-          <table class="report__header" width="100%" cellSpacing="0" cellPadding="0">
-            <tr>
-              <td width="100%">
-                <img
-                  src="https://ecs7.tokopedia.net/img/wallet/email/logo-reksadana_tokopedia.png"
-                  alt="Logo Tokopedia Reksadana"
-                  width="235"
-                />
-              </td>
-            </tr>
-          </table>
+          {{> header-pdf }}
           <!-- end of section Header -->
 
           <!-- section Body -->
@@ -116,7 +110,6 @@ title: Reksa Dana - Monthly Report
                   </tr>
                 </table>
 
-
                 <table class="content__transaction" width="100%" cellSpacing="0" cellPadding="0">
                   <tr>
                     <td>
@@ -181,23 +174,7 @@ title: Reksa Dana - Monthly Report
           <!-- end section Header -->
 
           <!-- section Footer -->
-          <table class="report__footer" width="100%" cellSpacing="0" cellPadding="0">
-            <tr>
-              <td width="70%">
-                <p>
-                  Powered by:
-                  <img
-                    src="https://ecs7.tokopedia.net/assets-mutualfund-frontend/prod/0dcfacc973d0ebc7917ef8707120a83d.png"
-                    alt="Logo Bareksa"
-                    width="65"
-                  />
-                </p>
-              </td>
-              <td width="30%" align="right">
-                Halaman: <strong>1</strong>/2
-              </td>
-            </tr>
-          </table>
+          {{> footer-pdf }}
           <!-- end of Section Footer -->
         </td>
       </tr>
