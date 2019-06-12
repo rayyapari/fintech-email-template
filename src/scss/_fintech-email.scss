@@ -91,6 +91,9 @@ ol {
       color: $green-base;
     }
   }
+  &.ft-warning {
+    background-color: $yellow-warning;
+  }
 }
 
 .ft-info__icon {
@@ -441,7 +444,6 @@ ol {
         color: $black-light;
         background-color: $gray-alabaster;
         border-bottom: 0;
-
       }
 
       tr > td.body {
@@ -450,8 +452,8 @@ ol {
 
       tr > td.footer {
         font-size: 12px;
-        border-top: 0.5px solid #D8D8D8;
-        border-bottom: 1.5px solid #D8D8D8;
+        border-top: 0.5px solid #d8d8d8;
+        border-bottom: 1.5px solid #d8d8d8;
       }
     }
   }
