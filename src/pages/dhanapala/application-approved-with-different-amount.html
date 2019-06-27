@@ -1,0 +1,87 @@
+---
+layout: dhanapala
+title: Application Approved
+userName: Naomi Intan
+---
+
+<table border="0" cellpadding="0" cellspacing="0" class="ft-body__container" align="center">
+  <!-- Header -->
+  {{> header-dhanapala }}
+  <!-- end of Header -->
+
+  <!-- Body -->
+  <tr>
+    <td class="padding-y8 padding-x24">
+      <p class="dp-text__greeting">
+        Halo {{ userName }},
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="padding-y8 padding-x24 dp-content__info">
+      <p class="dp-text__title"><b>Selamat! Pengajuan pinjaman [tujuanPinjaman] disetujui</b></p>
+      <p class="dp-text__desc">
+        Dhanapala telah menyetujui pengajuan pinjamanmu dengan nominal yang telah disesuaikan. Silakan lengkapi tanda
+        tangan digital sebagai persetujuan menerima pinjaman.
+      </p>
+      <div class="dp-text__desc">
+        Cek ringkasan dan download dokumen terlampir untuk detailnya
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="padding-t16 padding-x24" align="center">
+      <a class="dp-btn blue medium" href="#!">
+        Lengkapi Tanda Tangan
+      </a>
+    </td>
+  </tr>
+
+  <!-- Table -->
+  <tr>
+    <td class="padding-xy24 dp-table__summary">
+      <p><b>Ringkasan Pinjaman</b></p>
+      <table cellpadding="0" cellspacing="0" width="100%" class="dp-table__summary-content">
+        <tr>
+          <td width="40%" align="left">Nama Pemohon</td>
+          <td width="60%" align="right"><b>{{ userName }}</b></td>
+        </tr>
+        <tr>
+          <td width="40%" align="left">ID Pinjaman</td>
+          <td width="60%" align="right"><b>#1234</b></td>
+        </tr>
+        <tr>
+          <td width="40%" align="left">Jumlah Pinjaman Diajukan</td>
+          <td width="60%" align="right"><b>Rp60.000.000</b></td>
+        </tr>
+        <tr>
+          <td width="40%" align="left">Jumlah Pinjaman Disetujui</td>
+          <td width="60%" align="right"><b>Rp36.000.000</b></td>
+        </tr>
+        <tr>
+          <td width="40%" align="left">Lama Pinjaman</td>
+          <td width="60%" align="right"><b>6 Bulan</b></td>
+        </tr>
+        <tr>
+          <td width="40%" align="left">Cicilan / Bulan</td>
+          <td width="60%" align="right"><b>Rp6.000.000</b></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <!-- end of Table -->
+
+  <tr>
+    <td class="padding-x24 padding-b16">
+      Butuh bantuan seputar Dhanapala? Hubungi kami di <a class="dp-link" href="#!">sini</a>.
+    </td>
+  </tr>
+
+  <!-- end of Body -->
+
+  <!-- Footer -->
+  {{> footer-dhanapala }}
+  <!-- end of Footer -->
+</table>

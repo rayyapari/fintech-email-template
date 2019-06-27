@@ -1,0 +1,132 @@
+@import "./color";
+@import "./typography";
+
+/* Button */
+.dp-btn {
+  display: inline-block;
+  padding: 0 24px;
+  color: $white-base;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 8px;
+  box-sizing: border-box;
+  text-align: center;
+
+  &.blue {
+    background-color: #20416c;
+  }
+
+  &.ghost {
+    background-color: $white-base;
+    color: $black-lighter;
+    border: 1px solid $gray-alto;
+  }
+
+  &.large {
+    height: 48px;
+    line-height: 48px;
+  }
+
+  &.medium {
+    height: 40px;
+    line-height: 40px;
+  }
+
+  &.small {
+    font-size: 12px;
+    height: 32px;
+    line-height: 32px;
+  }
+
+  &.block {
+    display: block;
+    width: 100%;
+  }
+}
+
+/* end of Button */
+
+/* Header Styling */
+.dp-product__logo {
+  height: 35px;
+}
+
+/* end of Header Styling */
+
+/* Footer Styling */
+.dp-footer {
+  &__reminder {
+    margin: 0;
+    padding-top: 16px;
+    font-size: $font-size-caption;
+    color: $black-lighter;
+    border-top: 1px solid $gray-alto;
+  }
+
+  &__contact {
+    font-size: $font-size-caption-2;
+    color: $black-lighter;
+    border-top: 1px solid $gray-alto;
+    background-color: $gray-alabaster;
+    text-align: center;
+
+    a {
+      color: #1a406f;
+    }
+  }
+}
+
+/* Table Styling */
+.dp-table {
+  &__summary {
+    p {
+      margin: 0 0 16px;
+      font-size: 16px;
+    }
+
+    &-content {
+      width: 100%;
+      min-width: 100%;
+      padding: 16px;
+      background-color: #f3f4f5;
+      border-radius: 8px;
+
+      tr> {
+
+        td,
+        th {
+          padding: 6px 0;
+        }
+      }
+    }
+  }
+
+  &__code-content {
+    font-size: 28px;
+  }
+}
+
+.dp-link {
+  color: #1a406f;
+}
+
+.dp-text {
+  &__greeting {
+    margin: 0;
+    font-size: 16px
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  &__desc {
+    margin: 12px 0 0;
+    color: $black-light;
+  }
+}
+
+/* end of Table Styling */
+
+/* end of Footer Styling */

@@ -1,0 +1,80 @@
+---
+layout: dhanapala
+title: Application Sent
+userName: Naomi Intan
+---
+
+<table border="0" cellpadding="0" cellspacing="0" class="ft-body__container" align="center">
+  <!-- Header -->
+  {{> header-dhanapala }}
+  <!-- end of Header -->
+
+  <!-- Body -->
+  <tr>
+    <td class="padding-y8 padding-x24">
+      <p class="dp-text__greeting">
+        Halo {{ userName }},
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="padding-y8 padding-x24 dp-content__info">
+      <p class="dp-text__title"><b>Pengajuan pinjaman [tujuanPinjaman] sedang diproses</b></p>
+      <p class="dp-text__desc">
+        Terima kasih telah mengajukan pinjaman melalui Dhanapala. Proses verifikasi membutuhkan waktu paling lama 3 x 24
+        jam di hari kerja. Pantau status pengajuanmu di website Dhanapala.
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="padding-t16 padding-x24" align="center">
+      <a class="dp-btn ghost medium" href="#!">
+        Kunjungi Dhanapala
+      </a>
+    </td>
+  </tr>
+
+  <!-- Table -->
+  <tr>
+    <td class="padding-xy24 dp-table__summary">
+      <p><b>Ringkasan Pengajuan</b></p>
+      <table cellpadding="0" cellspacing="0" width="100%" class="dp-table__summary-content">
+        <tr>
+          <td width="40%" align="left">Nama Pemohon</td>
+          <td width="60%" align="right"><b>{{ userName }}</b></td>
+        </tr>
+        <tr>
+          <td width="40%" align="left">ID Pinjaman</td>
+          <td width="60%" align="right"><b>#1234</b></td>
+        </tr>
+        <tr>
+          <td width="40%" align="left">Jumlah Pinjaman</td>
+          <td width="60%" align="right"><b>Rp60.000.000</b></td>
+        </tr>
+        <tr>
+          <td width="40%" align="left">Lama Pinjaman</td>
+          <td width="60%" align="right"><b>6 Bulan</b></td>
+        </tr>
+        <tr>
+          <td width="40%" align="left">Cicilan / Bulan</td>
+          <td width="60%" align="right"><b>Rp10.000.000</b></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <!-- end of Table -->
+
+  <tr>
+    <td class="padding-x24 padding-b16">
+      Jika status pengajuan belum berubah hingga 23 Mei 2019, hubungi kami di <a class="dp-link" href="#!">sini</a>.
+    </td>
+  </tr>
+
+  <!-- end of Body -->
+
+  <!-- Footer -->
+  {{> footer-dhanapala }}
+  <!-- end of Footer -->
+</table>
