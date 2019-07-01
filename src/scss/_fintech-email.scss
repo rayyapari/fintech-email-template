@@ -134,176 +134,6 @@ ol {
   border: solid 1px #ecdb77;
 }
 
-.ft-giftcard {
-  &__intro {
-    font-size: $font-size-caption;
-  }
-
-  &__box {
-    padding: 16px;
-    border: 1px solid $gray-alto;
-    border-radius: 4px;
-
-    span {
-      font-size: $font-size-caption;
-    }
-
-    p {
-      margin: 8px 0;
-      color: $green-base;
-      font-size: $font-size-title;
-      font-weight: bold;
-    }
-  }
-
-  &__birthday {
-    margin: auto;
-    font-size: 14px;
-    color: $black-light;
-    border-radius: 8px 8px;
-    background-image: url(https://ecs7.tokopedia.net/assets-fintech-email/img/gift-card/bg-birthday.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    .content {
-      &--img {
-        padding: 16px 16px 0 16px;
-      }
-
-      &--desc {
-        padding: 16px;
-      }
-    }
-
-    .title {
-      font-size: 16px;
-      font-weight: bold;
-      margin-top: 0;
-      margin-bottom: 8px;
-      color: $black-base;
-    }
-
-    .img-icon {
-      width: 100%;
-    }
-  }
-}
-
-.ft-giftcard__container {
-  padding: 24px 24px 64px;
-  background-image: url("https://ecs7.tokopedia.net/assets-fintech-email/img/gift-card/background-illustration.png");
-  background-size: 100%;
-  background-position: top center;
-  background-repeat: no-repeat;
-}
-
-.ft-giftcard__content {
-  &__detail {
-    width: 435px !important;
-    background-color: $white-base;
-    border-radius: 8px 8px 0 0;
-    margin: auto;
-    padding: 16px;
-    border-top: 1px solid $gray-alto;
-    border-left: 1px solid $gray-alto;
-    border-right: 1px solid $gray-alto;
-
-    .giftcard__amount {
-      margin: 0;
-      font-size: 18px;
-      font-weight: bold;
-    }
-
-    .giftcard__validity {
-      margin: 0;
-      font-size: 12px;
-      color: rgba(0, 0, 0, 0.38);
-    }
-  }
-
-  &__top {
-    margin: auto;
-    padding: 16px;
-    width: 435px !important;
-    height: 250px !important;
-    color: $white-base;
-    border-left: 1px solid $gray-alto;
-    border-right: 1px solid $gray-alto;
-
-    &.without-detail {
-      border-radius: 8px 8px 0 0;
-    }
-
-    background-image: url("https://ecs7.tokopedia.net/assets-fintech-email/img/gift-card/card-design-toped.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  &__bottom {
-    margin: auto;
-    padding: 16px;
-    width: 435px !important;
-    background-color: $white-base;
-    border-radius: 0 0 8px 8px;
-    border-bottom: 1px solid $gray-alto;
-    border-left: 1px solid $gray-alto;
-    border-right: 1px solid $gray-alto;
-
-    &--payment {
-      border: 1px solid $gray-alto;
-    }
-
-    .giftcard__receiver {
-      margin: 0;
-      font-size: 24px;
-    }
-
-    .giftcard__message {
-      margin: 8px 0;
-      padding-bottom: 24px;
-      border-bottom: 1px solid $gray-alto;
-      font-size: 14px;
-      color: $black-lighter;
-    }
-
-    .giftcard__sender {
-      margin: 8px 0 0;
-      font-size: 12px;
-      color: $black-base;
-
-      span {
-        padding-right: 8px;
-        color: $black-lighter;
-        font-style: italic;
-      }
-    }
-  }
-
-  &__code {
-    margin: 24px auto 0;
-    width: 435px !important;
-    background-color: $white-base;
-    border-radius: 8px;
-    border: 1px solid #e0e0e0;
-
-    .giftcard__label {
-      margin: 0;
-      font-size: 14px;
-    }
-
-    .giftcard__code {
-      margin: 8px 0 0;
-      font-size: $font-size-title;
-    }
-
-    .giftcard__button {
-      border-left: 1px dashed $gray-alto;
-    }
-  }
-}
-
 /* Header */
 .ft-product__logo {
   height: 35px;
@@ -654,71 +484,6 @@ ol {
   }
 }
 
-/* Gift Card Style */
-.ft-giftcard__intro {
-  &__title {
-    margin: 0 0 24px;
-    font-size: 20px;
-  }
-
-  &__desc {
-    margin: 0;
-    color: $black-light;
-    line-height: 1.5;
-  }
-}
-
-.ft-giftcard__redeem {
-  &__title {
-    margin: 0 0 16px;
-    font-size: 20px;
-
-    &.secondary {
-      margin: 0 0 8px;
-    }
-  }
-
-  &__subtitle {
-    margin: 0;
-    font-size: 12px;
-    color: $black-light;
-    font-size: 18px;
-  }
-
-  &__desc {
-    margin: 16px 0 0;
-    font-size: $font-size-caption;
-    color: $black-lighter;
-  }
-}
-
-.ft-giftcard__recommendation {
-  padding: 0;
-  width: 170px !important;
-  border: 1px solid $gray-alto;
-  border-radius: 8px;
-
-  img {
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    margin-bottom: 0;
-    width: 100%;
-  }
-
-  .title {
-    width: 152px !important;
-    padding: 8px;
-    margin: 0;
-    font-size: 12px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    color: rgba(0, 0, 0, 0.54);
-  }
-}
-
-/* end of Gift Card Style */
-
 .ft-contact {
   margin: 0;
   font-size: $font-size-caption;
@@ -813,7 +578,6 @@ ol {
     }
   }
 }
-
 /* End of Footer */
 
 /* Onboarding Styles */
@@ -895,7 +659,6 @@ ol {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.07);
   }
 }
-
 /* end of Onboarding Styles */
 
 .ft-mcl {
