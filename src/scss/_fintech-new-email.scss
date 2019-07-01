@@ -26,7 +26,7 @@
 /* table summary */
 .ft-nw-table {
   &__summary {
-    p {
+    .title {
       margin: 0 0 16px;
       font-size: 14px;
     }
@@ -42,6 +42,10 @@
         td,
         th {
           padding: 10px 0;
+
+          p {
+            margin: 0;
+          }
         }
       }
     }
