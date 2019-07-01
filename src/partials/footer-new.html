@@ -5,7 +5,7 @@
         <a class="ft-link" target="_blank" href="https://www.tokopedia.com/bantuan/">hubungi kami</a>.
       </p>
 
-      {{#ifequal type 'emas'}}
+      {{#ifequal type 'reksadana'}}
       <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
         <tr>
           <td width="260px" align="center">
@@ -15,8 +15,10 @@
                   <tbody>
                       <tr>
                           <td align="center">
-                            <img src="https://ecs7.tokopedia.net/assets-fintech-email/img/icon/icon-emas_tokopedia.png"
-                              alt="Icon Tokopedia Emas" width="50" class="img" />
+                            <div class="img-container">
+                              <img src="https://ecs7.tokopedia.net/assets-fintech-email/img/icon/icon-emas_tokopedia.png"
+                                alt="Icon Tokopedia Emas" width="50" class="img" />
+                            </div>
                           </td>
                       </tr>
                   </tbody>
@@ -42,8 +44,10 @@
                   <tbody>
                       <tr>
                           <td align="center">
-                            <img src="https://ecs7.tokopedia.net/assets-fintech-email/img/icon/icon-giftcard_tokopedia.png"
-                              alt="Icon Tokopedia Gift Card" width="50" class="img" />
+                            <div class="img-container">
+                              <img src="https://ecs7.tokopedia.net/assets-fintech-email/img/icon/icon-giftcard_tokopedia.png"
+                                alt="Icon Tokopedia Gift Card" width="50" class="img" />
+                            </div>
                           </td>
                       </tr>
                   </tbody>
@@ -52,7 +56,7 @@
               <table>
                   <tbody>
                       <tr>
-                          <td  class="ft-nw-footer__product" align="center">
+                          <td class="ft-nw-footer__product" align="center">
                               <p class="title">Gift Card</p>
                               <p class="desc">Beri kado untuk kerabat dengan nominal sesukamu</p>
                           </td>
@@ -62,14 +66,98 @@
             </a>
 
           </td>
-          <!-- <td width="260px" align="center">
-            <a class="ft-nw-footer__product" href="https://www.tokopedia.com/gift-card/" target="_blank">
-              <img src="https://ecs7.tokopedia.net/assets-fintech-email/img/icon/icon-giftcard_tokopedia.png"
-                alt="Icon Tokopedia Gift Card" width="50" class="img" />
-              <p class="title">Gift Card</p>
-              <p class="desc">Beri kado untuk kerabat dengan nominal sesukamu</p>
+        </tr>
+      </table>
+      {{/ifequal}}
+
+      {{#ifequal type 'asuransi'}}
+      <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
+        <tr>
+          <td width="160px" align="center">
+            <a href="https://www.tokopedia.com/p/handphone-tablet" target="_blank">
+              <div class="ft-nw-footer__product-img">
+                <table>
+                  <tbody>
+                      <tr>
+                          <td class="img-container" align="center" valign="middle">
+                            <img src="https://ecs7.tokopedia.net/assets-fintech-email/img/icon/icon-proteksi-gadget.png"
+                              alt="Icon Proteksi Gadget" height="35" />
+                          </td>
+                      </tr>
+                  </tbody>
+                </table>
+              </div>
+              <table>
+                  <tbody>
+                      <tr>
+                          <td class="ft-nw-footer__product" align="center">
+                              <p class="title">Proteksi Gadget</p>
+                              <p class="desc desc--three">Lindungi perangkat dari kerusakan yang tidak tercakup oleh garansiresmi</p>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
             </a>
-          </td> -->
+          </td>
+          <td width="16px"></td>
+          <td width="160px" align="center">
+            <a href="https://www.tokopedia.com/flight/" target="_blank">
+              <div class="ft-nw-footer__product-img">
+                <table>
+                  <tbody>
+                      <tr>
+                          <td align="center">
+                            <div class="img-container">
+                              <img src="https://ecs7.tokopedia.net/assets-fintech-email/img/icon/icon-asuransi-penerbangan.png"
+                                alt="Icon Tokopedia Asuransi Penerbangan" height="35" />
+                            </div>
+                          </td>
+                      </tr>
+                  </tbody>
+                </table>
+              </div>
+              <table>
+                  <tbody>
+                      <tr>
+                          <td class="ft-nw-footer__product" align="center">
+                              <p class="title">Asuransi Penerbangan</p>
+                              <p class="desc desc--three">Dapatkan biaya kompensasi untuk setiap 2 jam keterlambatan perjalanan</p>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+            </a>
+          </td>
+          <td width="16px"></td>
+          <td width="160px" align="center">
+            <a href="https://tiket.tokopedia.com/kereta-api/" target="_blank">
+              <div class="ft-nw-footer__product-img">
+                <table>
+                  <tbody>
+                      <tr>
+                          <td align="center">
+                            <div class="img-container">
+                              <img src="https://ecs7.tokopedia.net/assets-fintech-email/img/icon/icon-asuransi-kereta.png"
+                                alt="Icon Tokopedia Asuransi Kereta Api" height="35" />
+                            </div>
+                          </td>
+                      </tr>
+                  </tbody>
+                </table>
+              </div>
+              <table>
+                  <tbody>
+                      <tr>
+                          <td class="ft-nw-footer__product" align="center">
+                              <p class="title">Asuransi Kereta Api</p>
+                              <p class="desc desc--three">Dapatkan biaya kompensasi untuk untuk setiap pembatalan perjalanan</p>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+            </a>
+
+          </td>
         </tr>
       </table>
       {{/ifequal}}
