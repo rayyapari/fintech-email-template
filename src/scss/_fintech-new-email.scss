@@ -1,6 +1,11 @@
 @import "./color";
 @import "./typography";
 
+.ft-nw__wrapper {
+  width: 100%;
+  min-width: 100%;
+}
+
 /* intro */
 .ft-nw-intro {
   &__img {
@@ -22,13 +27,20 @@
 }
 /* end of intro */
 
-
 /* table summary */
 .ft-nw-table {
   &__summary {
     .title {
       margin: 0 0 16px;
       font-size: 14px;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+
+    small {
+      line-height: 2;
     }
 
     &-content {
@@ -76,7 +88,7 @@
       background-color: #fff;
       display: inline-block;
 
-      img {
+      .img {
         padding: 8px;
       }
     }
