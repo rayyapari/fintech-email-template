@@ -16,6 +16,7 @@
   &__name {
     font-size: 16px;
     color: $black-base;
+    margin: 16px 0 0;
   }
 
   &__title {
@@ -25,6 +26,7 @@
     margin: 8px 0 0 0;
   }
 }
+
 /* end of intro */
 
 /* table summary */
@@ -32,7 +34,7 @@
   &__summary {
     .title {
       margin: 0 0 16px;
-      font-size: 14px;
+      font-size: 16px;
     }
 
     p {
@@ -51,6 +53,7 @@
       border-radius: 8px;
 
       tr> {
+
         td,
         th {
           padding: 10px 0;
@@ -64,6 +67,7 @@
     }
   }
 }
+
 /* end of table summary */
 
 /* footer */
@@ -96,7 +100,7 @@
 
   &__product {
     display: block;
-    padding: 32px 8px 16px 8px;
+    padding: 34px 8px 16px 8px;
     color: $black-light;
     border: 1px solid $gray-alto;
     border-radius: 8px;
@@ -119,7 +123,7 @@
       text-align: center;
 
       &--three {
-        margin: 8px 0 0 0;
+        margin: 4px 0 0 0;
       }
     }
   }
@@ -166,4 +170,5 @@
     }
   }
 }
+
 /* end of footer */
