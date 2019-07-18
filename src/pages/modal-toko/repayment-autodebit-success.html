@@ -1,0 +1,93 @@
+---
+title: Modal Toko Repayment Success
+userName: Ray Yapari
+iconUrl: "https://ecs7.tokopedia.net/assets-fintech-email/img/modal-toko/ic-repayment-autodebit.png"
+iconAlt: "Icon Modal Toko Pembayaran Sukses"
+iconDesc: Pembayaran Autodebit Tagihan Modal Toko Berhasil
+---
+
+<table
+  border="0"
+  cellpadding="0"
+  cellspacing="0"
+  class="ft-body__container"
+  align="center"
+>
+  <!-- Header -->
+  {{> header type="modal-toko"}}
+  <!-- end of Header -->
+
+  <!-- Body -->
+  {{> intro}}
+
+  <tr>
+    <td class="padding-y16 padding-x24">
+      Terima kasih telah melakukan pembayaran. Berikut detail pembayaran tagihan
+      Modal Toko-mu.
+    </td>
+  </tr>
+
+  <!-- Table -->
+  <tr>
+    <td class="padding-y16 padding-x24 ft-table__summary">
+      <p><b>Ringkasan Pembayaran Tagihan Modal Toko</b></p>
+      <table
+        cellpadding="0"
+        cellspacing="0"
+        width="100%"
+        class="ft-table__summary-content"
+      >
+        <tr>
+          <td width="40%" align="left">ID Transaksi</td>
+          <td width="60%" align="right"><b>MT38922</b></td>
+        </tr>
+        <tr>
+          <td width="40%" align="left">Waktu Transaksi</td>
+          <td width="60%" align="right"><b>14 Februari 2019 | 10.32 WIB</b></td>
+        </tr>
+        <tr>
+          <td colspan="2" width="100%" align="left">
+            Detail Cicilan
+            <table
+              cellpadding="0"
+              cellspacing="0"
+              width="100%"
+              class="ft-mcl__loan"
+            >
+              <tr>
+                <td width="40%" align="left">Cicilan MT38922</td>
+                <td width="60%" align="right">
+                  <b>Rp200.000</b><br />
+                  <small>(Termasuk denda keterlambatan)</small>
+                </td>
+              </tr>
+              <tr>
+                <td width="40%" align="left">Cicilan MT38922</td>
+                <td width="60%" align="right"><b>Rp100.000</b></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td width="40%" align="left">Total Pembayaran</td>
+          <td width="60%" align="right"><b>Rp300.000</b></td>
+        </tr>
+        <tr>
+          <td width="40%" align="left">Metode Pembayaran</td>
+          <td width="60%" align="right"><b>Saldo Penghasilan</b></td>
+        </tr>
+        <tr>
+          <td width="40%" align="left">Status</td>
+          <td width="60%" align="right"><b>Berhasil</b></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <!-- end of Table -->
+
+  <!-- end of Body -->
+
+  <!-- Footer -->
+  {{> footer type="investment"}}
+  <!-- end of Footer -->
+</table>
