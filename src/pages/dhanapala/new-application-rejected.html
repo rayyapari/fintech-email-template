@@ -1,0 +1,95 @@
+---
+layout: dhanapala
+title: Application Rejected
+userName: Naomi Intan
+---
+
+<table border="0" cellpadding="0" cellspacing="0" class="ft-body__container" align="center">
+  <!-- Header -->
+  {{> header-dhanapala }}
+  <!-- end of Header -->
+
+  <!-- Body -->
+  <tr>
+    <td class="padding-y8 padding-x24">
+      <p class="dp-text__greeting">
+        Halo, {{ userName }}
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="padding-y8 padding-x24">
+      <p class="dp-text__title"><b>Pengajuan pinjaman Anda ditolak</b></p>
+      <p class="dp-text__desc">
+        Maaf, Dhanapala menolak pinjaman yang Anda ajukan. Dokumen dan data yang kamu upload belum memenuhi <b>syarat
+          dan ketentuan</b> untuk mendapatkan pinjaman.
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="padding-y8 padding-x24">
+      <p><b>Berikut alasan umum pengajuan ditolak:</b></p>
+      <ol type="1">
+        <li>
+          Keterangan atau data yang Anda berikan terbukti palsu atau tidak sah.
+        </li>
+        <li>
+          Anda/toko Anda pernah terlibat transaksi yang mencurigakan.
+        </li>
+        <li>
+          Anda melanggar syarat dan ketentuan Dhanapala.
+        </li>
+        <li>
+          Anda memiliki catatan kredit yang buruk.
+        </li>
+      </ol>
+
+      <p>Anda bisa ajukan pinjaman ulang 90 hari setelah penolakan.</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="padding-x24 padding-y16" align="center">
+      <a class="dp-btn blue large" href="#!">
+        Info Pengajuan Ditolak
+      </a>
+    </td>
+  </tr>
+
+  <!-- Table -->
+  <tr>
+    <td class="padding-xy24 dp-table__summary">
+      <p><b>Ringkasan Pengajuan</b></p>
+      <table cellpadding="0" cellspacing="0" width="100%" class="dp-table__summary-content">
+        <tr>
+          <td width="23%">Nama Pemohon</td>
+          <td width="5%">:</td>
+          <td width="72%"><b>{{ userName }}</b></td>
+        </tr>
+        <tr>
+          <td width="23%">ID Pengajuan</td>
+          <td width="5%">:</td>
+          <td width="72%"><b>#1234</b></td>
+        </tr>
+        <tr>
+          <td width="23%">Jumlah Pinjaman</td>
+          <td width="5%">:</td>
+          <td width="72%"><b>Rp60.000.000</b></td>
+        </tr>
+        <tr>
+          <td width="23%">Durasi Pinjaman</td>
+          <td width="5%">:</td>
+          <td width="72%"><b>6 Bulan</b></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <!-- end of Table -->
+  <!-- end of Body -->
+
+  <!-- Footer -->
+  {{> footer-dhanapala }}
+  <!-- end of Footer -->
+</table>

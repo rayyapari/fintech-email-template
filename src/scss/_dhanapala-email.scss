@@ -61,6 +61,11 @@
     font-size: $font-size-caption;
     color: $black-lighter;
     border-top: 1px solid $gray-alto;
+    text-align: center;
+
+    b {
+      color: #1a406f;
+    }
   }
 
   &__contact {
@@ -70,7 +75,7 @@
     background-color: $gray-alabaster;
     text-align: center;
 
-    a {
+    b {
       color: #1a406f;
     }
   }
@@ -128,5 +133,70 @@
 }
 
 /* end of Table Styling */
+
+.dp-how-to {
+  &__title {
+    margin: 0 0 32px;
+    color: #1a406f;
+    font-size: 18px;
+  }
+
+  &__subtitle {
+    margin: 16px 0;
+    color: #1a406f;
+    font-size: 16px;
+  }
+
+  &__desc {
+    margin: 0;
+    color: $black-light;
+    font-size: 12px;
+  }
+}
+
+.dp-duedate {
+  border-radius: 8px;
+  background-size: cover;
+
+  &.blue {
+    background-image: url("http://drive.google.com/uc?export=view&id=1zafjP69sOQDhOPa1jlLpiQauZxtkiSAd");
+    background-position: center;
+  }
+
+  &.red {
+    background-image: url("http://drive.google.com/uc?export=view&id=1Zplv4zKrlcLUClt5Am4Gts0T-8LCFnFb");
+    background-position: center;
+  }
+
+  &.forgot {
+    background-image: url("http://drive.google.com/uc?export=view&id=1oK1G0oqxpeeTGxuWvgipTm2KwQiSWmDJ");
+    background-position: top left;
+    margin: 0 auto;
+  }
+
+  .label {
+    margin: 0;
+    color: $black-light;
+    font-size: 14px;
+  }
+
+  .value {
+    margin: 8px 0 16px;
+    font-size: 22px;
+  }
+
+  .expired {
+    color: #d6001c;
+  }
+
+  .list-title {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .list {
+    margin: 8px 0 16px;
+  }
+}
 
 /* end of Footer Styling */

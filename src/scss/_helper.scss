@@ -60,6 +60,21 @@
   }
 }
 
+.margin {
+  &-auto {
+    margin: 0 auto;
+  }
+
+  &-y16 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}
+
+.dp-block {
+  display: block;
+}
+
 .borderless {
   border: none !important;
 
@@ -106,4 +121,8 @@
 
 .ft-bold {
   font-weight: bold;
+}
+
+.ft-center {
+  text-align: center;
 }
